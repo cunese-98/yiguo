@@ -1,0 +1,87 @@
+body {
+    padding: 0;
+    margin: 0;
+    background: #f7f8f8;
+}
+.head-3 {
+    border: none;
+    background: #e0e0e0;
+}
+.head-3 .wrap-3 {
+    padding: 15px 0 5px 0;
+}
+.logo-3 {
+    position: relative;
+}
+.logo-3 a {
+    width: 195px;
+    height: 50px;
+    background: url("https://login.yiguo.com/Content/img/themes/logo.png") no-repeat;
+    display: block;
+}
+.logo-3 .reg-3 {
+    position: absolute;
+    font-size: 28px;
+    font-family: "Microsoft YaHe";
+    color: #008842;
+    left: 240px;
+    top:6px;
+}
+.wrap-3 {
+    width: 1200px;
+    margin: 0 auto;
+}
+.log-3 {
+    padding-top: 30px;
+    margin-top: 20px;
+    border-top: 1px solid #65b42c;
+    border-bottom: 1px solid #65b42c;
+    background: #fff;
+    /* border: none; */
+}
+.bio-3 {
+    width: 900px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+.bio-3 dl {
+    width: 350px;
+    margin: 0 auto;
+    padding: 30px 0;
+    list-style-type: none;
+}
+.bio-3 dt {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    padding-left: 45px;
+    color: #333;
+    list-style-type: none;
+}
+.bio-3 dd {
+    margin-top: 20px;
+    list-style-type: none;
+}
+.bio-3 dd span {
+    display: inline-block;
+    width: 60px;
+    font-size: 14px;
+    margin-right: 15px;
+    text-align: right;
+}
+.bio-3 dd input {
+    width: 225px;
+    height: 25px;
+    border: 1px solid #c1c1c1;
+}
+.bio-3 dd .enter-3-1 {
+    display: inline-block;
+    width: 120px;
+    height: 30px;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+    color: #fff;
+    background: #008842;
+    text-decoration: none;
+} 
