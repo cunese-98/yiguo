@@ -16,7 +16,7 @@ body {
 .logo-3 a {
     width: 195px;
     height: 50px;
-    background: url("https://login.yiguo.com/Content/img/themes/logo.png") no-repeat;
+    background: url(https://login.yiguo.com/Content/img/themes/logo.png) no-repeat;
     display: block;
 }
 .logo-3 .reg-3 {

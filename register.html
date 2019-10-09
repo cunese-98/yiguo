@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.js"></script>
-    <title>Document</title>
+    <title>注册</title>
 </head>
 <style>
     body {
@@ -27,7 +27,7 @@
     .logo-3 a {
         width: 195px;
         height: 50px;
-        background: url("https://login.yiguo.com/Content/img/themes/logo.png") no-repeat;
+        background: url(https://login.yiguo.com/Content/img/themes/logo.png) no-repeat;
         display: block;
     }
     .logo-3 .reg-3 {
@@ -138,7 +138,7 @@
     }
     /* 精灵图 */
     .register-3 .ipone-3,.register-3 .set-3,.register-3 .aff-3,.register-3 .invite-3{
-        background-image: url("https://login.yiguo.com/Content/img/bg_input.png");
+        background-image: url(https://login.yiguo.com/Content/img/bg_input.png);
         background-repeat: no-repeat;
     }
     .register-3 .ipone-3 {
@@ -1090,7 +1090,7 @@
                             <img src="http://img06.yiguoimg.com/e/web/161205/01853/142855/register.png" alt="">
                         </div>
                         <div class="right-3">
-                            我已经注册，现在就 <a class="orange-3" href="">登录</a>
+                            我已经注册，现在就 <a class="orange-3" href="inter.html">登录</a>
                         </div>
                     </div>
                 </div>
@@ -1100,6 +1100,7 @@
 
     <script>
     $(document).ready(function() {
+        // 易果服务协议 隐私协议
         $(".green-3").click(function() {
             $(".popout-3-1").css("display","block");
         })
@@ -1111,6 +1112,30 @@
         })
         $(".flose-1").click(function() {
             $(".popout-3-2").hide();
+        })
+        $(".btn-gn-3").click(function() {
+            $(".popout-3-1").hide();
+            $(".popout-3-2").hide();
+        })
+        // 注册页面验证码
+        var validCode=true;
+        $(".gian-3").click (function () {
+            var time=60;
+            var code=$(this);
+            if (validCode) {
+                validCode=false;
+                code.addClass("gian-3-1");
+            var t=setInterval(function  () {
+                time--;
+                code.html(time+"秒");
+                if (time==0) {
+                    clearInterval(t);
+                code.html("重新获取");
+                    validCode=true;
+                code.removeClass("gian-3-1");
+                }
+            },1000)
+            }
         })
         $(".read-3").click(function() { 
             $(".button-3").css("background","#008842")
