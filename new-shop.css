@@ -1,0 +1,125 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+.new_container, .menu_content {
+    width: 100%;
+    color: #444444;
+    font-size: 12px;
+    font-family: Arial,Verdana,"\5b8b\4f53";
+}
+ul {
+    list-style: none;
+    overflow: hidden;
+}
+.new_container a, .menu_content a {
+    text-decoration: none;
+    color: #444444;
+}
+.wrap {
+    width: 1200px;
+    height: 38px;
+    margin: auto;
+    overflow: hidden;
+    border-bottom: 1px solid #008842;
+}
+.catalog {
+    float: left;
+    width: 180px;
+    height: 38px;
+    background-color: #008842;
+}
+.catalog a {
+    font: bold 15px/16px "Microsoft YaHei";
+    color: #fff;
+    display: block;
+    height: 38px;
+    line-height: 38px;
+    text-align: center;
+}
+.nav-items {
+    width: 1020px;
+    height: 37px;
+    line-height: 37px;
+}
+.nav-items ul li {
+    float: left;
+    width: 115px;
+    text-align: center;
+    
+}
+.nav-items a {
+    font-size: 15px;
+    font-weight: bold;
+}
+.activity {
+    width: 100%;
+    background: url("http://img12.yiguoimg.com/d/items/2018/180911/9288731002021163_1920x5944.jpg") no-repeat center top;
+}
+#bannerurl {
+    display: block;
+    width: 1147px;
+    height: 462px;
+    border: none;
+    margin: 0 218px;
+}
+.floor {
+    width: 1000px;
+    margin: auto;
+}
+.lazy {
+    display: block;
+    width: 100%;
+    height: 153px;
+}
+.j_product {
+    float: left;
+    position: relative;
+    width: 228px;
+    height: 330px;
+    padding: 6px;
+    margin: 0 0 25px 13px;
+    background: #fff;
+    overflow: hidden;
+}
+.product1 {
+    margin-left: 0;
+}
+.j_product img{
+    width: 228px;
+    height: 228px;
+}
+.j_product .name {
+    display: block;
+    height: 40px;
+    margin-top: 10px;
+    line-height: 20px;
+    font-size: 14px;
+}
+.j_product .price {
+    display: block;
+    margin: 16px 95px 0 0;
+    height: 25px;
+    line-height: 25px;
+    color: #e8340c;
+    font-size: 16px;
+    font-weight: bold;
+}
+.j_product strong {
+    font-size: 21px;
+}
+.j_product .state {
+    display: block;
+    width: 90px;
+    height: 25px;
+    margin: 0 auto;
+    line-height: 25px;
+    color: #fff;
+    cursor: default;
+    border-radius: 13px;
+    background: #969696;
+    position: absolute;
+    right: 6px;
+    bottom: 15px;
+    text-align: center;
+}
