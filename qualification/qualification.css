@@ -15,15 +15,6 @@ ul {
     margin: 0;
     padding: 0;
 }
-/* .inner li ,a {
-    padding-right: 10px;
-    color: #7a7a7a;
-    margin-top: 5px;
-    line-height: 22px;
-    width: 75px;
-} */
-
-
 .inner a {
     display: inline-block;
     padding-right: 10px;
@@ -31,10 +22,6 @@ ul {
     margin: 5px 0 0;
     line-height: 22px;
 }
-
-
-
-
 .bg {
     background-color: #c7e2d4;
 }
@@ -124,7 +111,7 @@ h4 {
     margin-top: 20px;
     display: block;
 }
-.txt2 , .mt20 {
+.txt2 , .mt20, .txt3 {
     color: #818985;
     margin-top: 5px;
     line-height: 23px;
@@ -189,4 +176,67 @@ table {
 .helptable strong {
     color: #818985;
     margin: 0;
+}
+.othertt {
+    margin-top: 10px;
+    margin-bottom: 15px
+}
+.green {
+    color: #008842;
+}
+.txt2 a {
+    margin: 0;
+}
+.txt2 a:hover {
+    color: #008842;
+}
+.h-green:hover {
+    color: #008842;
+}
+.H-center {
+    text-align: center;
+    line-height: 30px;
+    font-family: "微软雅黑";
+    font-weight: bold;
+    font-size: 14px;
+    color: #444;
+}
+.H-center a {
+    float: right;
+    margin-right: 150px;
+}
+.H-center a:hover{
+    color: #008842;
+}
+.H-txt {
+    font-size: 14px;
+    line-height: 19px;
+    font-family: "微软雅黑";
+    color: #444;
+}
+.underline {
+    text-decoration: underline;
+}
+.H-txt1 {
+    font-size: 14px;
+    line-height: 31px;
+    font-family: "微软雅黑";
+    color: #444;
+}
+.interval {
+    margin: 0 50px;
+}
+.H-txt2 {
+    font-size: 14px;
+    line-height: 31px;
+    font-family: "微软雅黑";
+    color: #000;
+    margin: 5px 0;
+}
+.h1 {
+    font-size: 20px;
+    font-weight: bold;
+}
+.black {
+    color: #000;
 }
