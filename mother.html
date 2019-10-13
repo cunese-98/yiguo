@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="shortcut icon" href="http://static01.yiguo.com/common/images/yiguo.ico">
+    <title>易果生鲜Yiguo网_全球精选_生鲜果蔬 品质食材_易果网yiguo.com</title>
+</head>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+}
+.onePic {
+    display: inline-block;
+    width:100%;
+    height: 462px;
+    background-image: url("http://img02.yiguo.com/e/others/150926/9288683654324026.jpg");
+    background-repeat: no-repeat;
+    background-size: 1583px 462px;
+    cursor: pointer;  
+} 
+.wrap {
+    width: 1200px;
+    height: 380px;
+    margin: auto;
+}
+.goods_list li {
+    position: relative;
+    width: 1200px;
+    height: 40px;
+    margin: 30px 0 60px;
+    padding-left: 85px;
+    list-style: none;
+    font: bold 18px/40px "Microsoft YaHei";
+    background: #e9e9e9;
+    color: #444;
+}
+.picIcon1,.picIcon2,.picIcon3 {
+    position: absolute;
+    left: 10px;
+    top: -10px;
+    width: 60px;
+    height: 60px;
+    background: url("./images/icon.png") no-repeat;
+}
+.picIcon1 {
+    background-position: -76px 0;
+}
+.picIcon2 {
+    background-position: -76px -72px;
+}
+.picIcon3 {
+    background-position: -76px -144px;
+}
+.tab-hd {
+    overflow: hidden;
+    background: #dbdcdc;
+}
+.tab-hd li {
+    float: left;
+    width: 300px;
+    list-style: none;
+    text-align: center;
+    border-top: 4px solid #dbdcdc;
+}
+.tab-hd a {
+    display: inline-block;
+    width: 300px;
+    height: 36px;
+    color: #777;
+    text-decoration: none;
+    font: normal 16px/36px "Microsoft YaHei";
+    cursor: pointer;  
+}
+.mo-active {
+    border-top-color: #999;
+    background: #fff;
+}
+.tab-hd li {
+    position: relative;
+}
+.d-arrow {
+    display: none;
+    position: absolute;
+    right: 10px;
+    top: 15px;
+    width: 10px;
+    height: 5px;
+    background: url("./images/d-arrow.png") no-repeat 0 -22px;
+}
+.sidebar {
+    display: block;
+    z-index: 100;
+    position: fixed;
+    bottom: 20px;
+    right: 47%;
+    margin-right: -625px;
+    width: 56px;
+}
+.service {
+    overflow: hidden;
+    display: block;
+    width: 50px;
+    height: 42px;
+    margin-bottom: 10px;
+    background: url("./images/sidebar.png") no-repeat left top;
+    background-position: 0 -46px;
+}
+.service:hover {
+    background-position: -55px -46px;
+}
+.go-top {
+    overflow: hidden;
+    display: none;
+    width: 50px;
+    height: 42px;
+    margin-bottom: 10px;
+    background: url("./images/sidebar.png") no-repeat left top;
+    background-position: 0 0;
+}
+.go-top:hover {
+    background-position: -55px 0;
+}
+</style>
+<body>
+    <a href="javascript:void(0)" class="onePic"></a>
+    <div class="wrap">
+        <div class="goods_list">
+            <ul>
+                <li><i class="picIcon1"></i>果然新鲜</li>
+                <li><i class="picIcon2"></i>营养肉食</li>
+                <li><i class="picIcon3"></i>安心水产</li>
+            </ul>
+        </div>
+        <div class="promotion-tab">
+            <ul class="tab-hd">
+                <li class="mo-active">
+                    <a href="javascript:void(0)">孕期产后</a>
+                    <i class="d-arrow"></i>
+                </li>
+                <li>
+                    <a href="javascript:void(0)">3岁以上</a>
+                    <i class="d-arrow"></i>
+                </li>
+                <li>
+                    <a href="javascript:void(0)">6岁以上</a>
+                    <i class="d-arrow"></i>
+                </li>
+                <li>
+                    <a href="javascript:void(0)">9岁以上</a>
+                    <i class="d-arrow"></i>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="sidebar">
+        <a href="javascript:void(0)" class="s-btn service"></a>
+        <a href="javascript:void(0)" class="s-btn go-top"></a>
+    </div>
+    <script type="text/javascript"> 
+    $(function() {
+        $(".tab-hd li").on("mouseenter",function() {
+            $(this).addClass("mo-active").siblings().removeClass("mo-active");
+        })
+        $(".tab-hd li").eq(0).children("i").css("display","block")
+        $(".tab-hd li").mouseenter(function() {
+            $(".d-arrow").css("display","none")
+            $(this).children("i").css("display","block")
+        })
+        window.onscroll = function () {
+            if ( $( window ).scrollTop() >= 500 ) {
+                $(".go-top").css("display","block")
+                } else {
+                    $(".go-top").css("display","none")
+                }
+            }
+            $(".go-top").click(function(){
+                $("body,html").animate({
+                    scrollTop: 0
+                }, "slow");
+            })
+    })
+    </script>
+</body>
+</html>
