@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.js"></script>
     <title>登录</title>
 </head>
 <style>
@@ -56,7 +57,7 @@
         margin-bottom: 20px;
         color: #878787;
         position: relative;
-        /* overflow: hidden; */
+        overflow: hidden;
     }
     .r-3 {
         text-align: right;
@@ -72,14 +73,21 @@
     }
     .main-3 p strong {
         font-size: 18px;
-        /* font-family: "Microsoft YaHe"; */
         color: #262626;
-        font-family: Arial,Verdana,"\5b8b\4f53";
+        /* font-family: Arial,Verdana,"\5b8b\4f53"; */
     }
     .login-3 p span {
         position: absolute;
         right: 0;
         top: 0;
+    }
+    .chunk-3-1 {
+        padding: 8px;
+        margin-left: -4px;
+        padding-bottom: 13px;
+        font-size: larger;
+        border: 1px solid #c1c1c1;
+        background: #fff;
     }
     .main-3 .gre-3 {
         text-decoration: underline;
@@ -96,13 +104,29 @@
         vertical-align: middle;
     }
     .trade-3 {
-        float: right;
         margin-top: 13px;
         color: #878787;
+    }
+    .trade-3:hover {
+        color: #008842;
     }
     .trade-3-1 {
         color: #878787;
     }
+    /* #msg-wrap-3 {
+        height: auto !important;
+        margin: 2px 0px 5px;
+        min-height: 31px;
+    } */
+    /* #l2 {
+        position: relative;
+        background: #FFEBEB none repeat scroll 0% 0%;
+        border: 1px solid #E4393C;
+        padding: 3px 10px 3px 40px;
+        line-height: 18px;
+        min-height: 18px;
+        color: #E4393C;
+    } */
     .btn-gre-3 {
         display: inline-block;
         width: 306px;
@@ -117,7 +141,7 @@
         text-decoration: none;
     }
     .main-3 p .ver-3 {
-        width: 150px;
+        width: 140px;
         height: 38px;
     }
     .main-3 .ipt-3 {
@@ -133,31 +157,97 @@
     .trade-3-1:hover {
         color: #008842;
     }
-    .in-3 i {
+    #in-3 i {
         display: inline-block;
-        width: 88px;
+        width: 79px;
         height: 20px;
         margin-right: 20px;
     }
     .login-3 i{
-        background-image: url("https://login.yiguo.com/Content/img/themes/bg_login.png");
+        background-image: url(https://login.yiguo.com/Content/img/themes/bg_login.png);
         background-repeat: no-repeat;
     }
     .qq-3 i {
-        background-position: -60px -200px;
+        background-position: -63px -200px;
+    }
+    .sina-3 i {
+        background-position: -162px -200px;
+    }
+    .ay-3 i {
+        background-position: -255px -200px;
+    }
+    /* 隐藏弹出二维码 */
+    .add-3 {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 200000;
+    }
+    .code-3 {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        width: 410px;
+        height: 250px;
+        margin: -170px 0 0 -250px;
+        padding: 45px;
+        border: 1px solid #c7c7c7;
+        z-index: 50;
+        background: #fff;
+    }
+    .code-3 p {
+        font-size: 14px;
+        line-height: 24px;
+        padding: 0 40px;
+        color: #565656;
+    }
+    .pcode-3 {
+        margin: 35px 0 0;
+        text-align: center;
+    }
+    .end-3 {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 10;
+        background: #000;
+        opacity: .2;
+    }
+    .code-3 .close-3 {
+        position: absolute;
+        top: 5px;
+        right: 15px;
+        font-size: 25px;
+        color: #333;
+        text-decoration: none;
     }
 </style>
 <body>
     <div>
-        <!-- 易果服务协议 -->
+        <!-- 隐藏弹出二维码 -->
+        <div class="add-3">
+            <div class="code-3">
+                <a class="close-3" href="javascript:(0);">×</a>
+                <p>亲，第三方登录目前仅支持移动端，请拿起手机扫描以下二维码下载易果生鲜APP或关注微信服务号吧！</p>
+                <div class="pcode-3">
+                    <img src="http://img07.yiguoimg.com/e/web/161205/01855/150158/code.jpg" alt="">
+                </div>
+            </div>
+            <div class="end-3"></div>
+        </div>
+        <!-- 登录头部 -->
         <div class="head-3">
             <div class="wrap-3">
                 <div class="logo-3">
-                    <a href=""></a>
+                    <a href="javascript:void(0)"></a>
                     <span class="reg-3">登录</span>
                 </div>
             </div>
         </div>
+        <!-- 登录界面 -->
         <form action="" method="POST">
             <div class="login-3">
                 <div class="wrap-3">
@@ -171,18 +261,21 @@
                                     <a class="gre-3" href="register.html">立即注册</a>
                                 </span>
                             </p>
+                            <!-- <div id="msg-wrap-3">
+                                <p id="l2"></p>
+                            </div> -->
                             <p>
                                 <span class="p-3"></span>
                                 <input type="text" class="ipt-3 use-3" placeholder="邮箱/账号/已验证手机">
                             </p>
                             <p>
                                 <span class="k-3"></span>
-                                <input type="text" class="ipt-3 pw-3" placeholder="密码">
+                                <input type="password" class="ipt-3 pw-3" placeholder="密码">
                             </p>
                             <p>
-                                <input type="text" class="ipt-3 ver-3" placeholder="验证码">
-                                <img src="" alt="">
-                                <a href="" class="trade-3" >换一张</a>
+                                <input type="text" class="ipt-3 ver-3" placeholder="验证码" id="ver-3-1">
+                                <i class="chunk-3-1"></i>
+                                <a href="javascript:void(0)" class="trade-3">换一张</a>
                             </p>
                             <p>
                                 <label for="use">
@@ -190,19 +283,19 @@
                                     <input type="hidden">自动登录
                                 </label>
                                 <span>
-                                    <a href="" class="trade-3-1" >忘记登录密码？</a>
+                                    <a href="import.html" class="trade-3-1" >忘记登录密码？</a>
                                 </span>
                             </p>
-                            <p><a class="btn-gre-3" href="">登&nbsp&nbsp录</a></p>
+                            <p><a class="btn-gre-3" href="javascript:void(0)">登&nbsp&nbsp录</a></p>
                             <p>第三方登录</p>
                             <div id="in-3">
-                                <a href="" class="qq-3">
+                                <a href="javascript:void(0)" class="qq-3">
                                     <i></i>
                                 </a>
-                                <a href="" class="sina-3">
+                                <a href="javascript:void(0)" class="sina-3">
                                     <i></i>
                                 </a>
-                                <a href="" class="ay-3">
+                                <a href="bio.html" class="ay-3">
                                     <i></i>
                                 </a>
                             </div>
@@ -212,5 +305,49 @@
             </div>
         </form>
     </div>
+    <script>
+        $(document).ready(function() {
+            // 第三方登录
+            $(".qq-3").click(function() {
+                $(".add-3").show();
+            })
+            $(".sina-3").click(function() {
+                $(".add-3").show();
+            })
+            $(".close-3").click(function() {
+                $(".add-3").hide();
+            })
+            // 随机验证码
+            var code; 
+            function createCode(){ 
+            code = '';
+            var codeLength = 4;
+            var codeV = $(".chunk-3-1"); 
+            var random = new Array(0,1,2,3,4,5,6,7,8,9,'A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R', 'S','T','U','V','W','X','Y','Z'); 
+            for(var i = 0; i < codeLength; i++){  
+               var index = Math.floor(Math.random()*36); 
+               code += random[index];
+            } 
+                codeV.text(code);
+            } 
+            createCode(); 
+            $(".trade-3").bind('click',function() { 
+                createCode(); 
+            });
+            // $("#ver-3-1").bind('click',function() { 
+            //  var oValue = $("#ver-3").val().toUpperCase(); 
+            //  $("#l2").html(""); 
+            // if(oValue ==""){ 
+            //   $("#l2").html("<font color='red'>*请输入验证码</font>"); 
+            // }else if(oValue != code){ 
+            //   $("#l2").html("<font color='red'>*验证码不正确，请重新输入</font>"); 
+            //   oValue = ""; 
+            //   createCode(); 
+            // }else{ 
+            //   $("#l2").html(); 
+            // } 
+        //   }); 
+        })
+    </script>
 </body>
 </html>

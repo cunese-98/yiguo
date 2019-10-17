@@ -8,260 +8,268 @@
     <title>注册</title>
 </head>
 <style>
-    body {
-        padding: 0;
-        margin: 0;
-        background: #f7f8f8;
-        font-family: Arial,Verdana,"\5b8b\4f53";
-    }
-    .head-3 {
-        border: none;
-        background: #e0e0e0;
-    }
-    .head-3 .wrap-3 {
-        padding: 15px 0 5px 0;
-    }
-    .logo-3 {
-        position: relative;
-    }
-    .logo-3 a {
-        width: 195px;
-        height: 50px;
-        background: url(https://login.yiguo.com/Content/img/themes/logo.png) no-repeat;
-        display: block;
-    }
-    .logo-3 .reg-3 {
-        position: absolute;
-        font-size: 28px;
-        font-family: "Microsoft YaHe";
-        color: #008842;
-        left: 240px;
-        top:6px;
-    }
-    .register-3 {
-        padding-top: 30px;
-    }
-    .wrap-3 {
-        width: 1200px;
-        margin: 0 auto;
-    }
-    .content-3 {
-        height: 550px;
-        padding: 40px 0 50px;
-        border: 1px solid #a5c9b6;
-        border-top: 0;
-        background-color: #fff;
-    }
-    .top-3 {
-        float: left;
-    }
-    .register-3 p {
-        margin-bottom: 29px;
-        font-size: 14px;
-    }
-    .register-3 .pic-3 {
-        display: inline-block;
-        width: 220px;
-        padding-right: 20px;
-        text-align: right;
-    }
-    .register-3 .ipt-3 {
-        width: 290px;
-        height: 38px;
-        font-size: 14px;
-        margin-right: 20px;
-        padding-left: 14px;
-        border: 1px solid #c1c1c1;
-        background: #fff;
-    }
-    .register-3 .yzm-3 {
-        width: 147px;
-    }
-    .chunk-3 {
-        width: 60px;
-        height: 37px;
-        padding-top: 2px;
-        border: 1px solid #c1c1c1;
-        background: #fff;
-    }
-    .register-3 .gian-3 {
-        display: inline-block;
-        width: 121px;
-        height: 38px;
-        line-height: 38px;
-        margin-right: 20px;
-        text-align: center;
-        border: 1px solid #c1c1c1;
-        background: #f7f7f7;
-        color: #008842;
-    }
-    a {
-        text-decoration: none;
-    }
-    .green-3,.green-3-1 {
-        color: #008842;
-    }
-    .one-3 {
-        color: #666;
-    }
-    .button-3 {
-        display: inline-block;
-        width: 306px;
-        height: 50px;
-        font-size: 18px;
-        line-height: 50px;
-        color: #fff;
-        text-align: center;
-        background: gray;
-    }
-    .register-3 .yet-3 {
-        width: 330px;
-        height: 340px;
-        padding-top: 80px;
-        font-size: 14px;
-        line-height: 56px;
-        border-left: 1px dashed #a5c9b6;
-        text-align: center;
-        float: right;
-    }
-    .register-3 .right-3 {
-        position: absolute;
-        top: 130px;
-        right: 230px;
-        font-size: 14px;
-        line-height: 1px;
-        text-align: right
-    }
-    .orange-3 {
-        text-decoration: underline;
-        color: #ef760a;
-    }
-    /* 精灵图 */
-    .register-3 .ipone-3,.register-3 .set-3,.register-3 .aff-3,.register-3 .invite-3{
-        background-image: url(https://login.yiguo.com/Content/img/bg_input.png);
-        background-repeat: no-repeat;
-    }
-    .register-3 .ipone-3 {
-        background-position: 276px -28px;
-    }
-    .register-3 .set-3 {
-        background-position: 276px -68px;
-    }
-    .register-3 .aff-3 {
-        background-position: 276px -68px;
-    }
-    .register-3 .invite-3 {
-        background-position: 276px -68px;
-    }
-    /* 易果服务协议 */
-    .popout-3-1,.popout-3-2 {
-        display: none;
-        position: fixed;
-        top: 0;
-        left: 0;
-        z-index: 20000;
-    }
-    .popout-bg-3 {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        z-index: 10;
-        border: 0;
-        opacity: .3;
-        background: #000;
-    }
-    .popout-wrap-3 {
-        width: 940px;
-        height: 500px;
-        margin-top: 158px;
-        margin-left: -470px;
-        z-index: 101;
-        position: relative;
-        left: 165%;
-        background: #fff;
-    }
-    .popout-con-3 {
-        width: 940px;
-        height: 500px;
-        border: 1px solid  #6ab930;
-        border-color: #008842;
-    }
-    .title-3 {
-        position: relative;
-        height: 40px;
-        font-size: 16px;
-        line-height: 40px;
-        padding: 0;
-        border-bottom: 1px solid #6ab930;
-        font-weight: bold;
-        text-align: center;
-        background: #fafcf6;
-    }
-    .up-3 {
-        float: right;
-        position: absolute;
-        right: 150px;
+body {
+    padding: 0;
+    margin: 0;
+    background: #f7f8f8;
+    font-family: Arial,Verdana,"\5b8b\4f53";
+}
+.head-3 {
+    border: none;
+    background: #e0e0e0;
+}
+.head-3 .wrap-3 {
+    padding: 15px 0 5px 0;
+}
+.logo-3 {
+    position: relative;
+}
+.logo-3 a {
+    width: 195px;
+    height: 50px;
+    background: url(https://login.yiguo.com/Content/img/themes/logo.png) no-repeat;
+    display: block;
+}
+.logo-3 .reg-3 {
+    position: absolute;
+    font-size: 28px;
+    font-family: "Microsoft YaHe";
+    color: #008842;
+    left: 240px;
+    top:6px;
+}
+.register-3 {
+    padding-top: 30px;
+}
+.wrap-3 {
+    width: 1200px;
+    margin: 0 auto;
+}
+.content-3 {
+    height: 550px;
+    padding: 40px 0 50px;
+    border: 1px solid #a5c9b6;
+    border-top: 0;
+    background-color: #fff;
+}
+.top-3 {
+    float: left;
+}
+.register-3 p {
+    margin-bottom: 29px;
+    font-size: 14px;
+}
+.register-3 .pic-3 {
+    display: inline-block;
+    width: 220px;
+    padding-right: 20px;
+    text-align: right;
+}
+.register-3 .ipt-3 {
+    width: 290px;
+    height: 38px;
+    font-size: 14px;
+    margin-right: 20px;
+    padding-left: 14px;
+    border: 1px solid #c1c1c1;
+    background: #fff;
+}
+.register-3 .yzm-3 {
+    width: 147px;
+}
+.chunk-3 {
+    padding: 10px;
+    font-size: large;
+    border: 1px solid #c1c1c1;
+    background: #fff;
+}
+.register-3 .gian-3 {
+    display: inline-block;
+    width: 121px;
+    height: 38px;
+    line-height: 38px;
+    margin-right: 20px;
+    text-align: center;
+    border: 1px solid #c1c1c1;
+    background: #f7f7f7;
+    color: #008842;
+}
+a {
+    text-decoration: none;
+}
+.green-3,.green-3-1 {
+    color: #008842;
+}
+.one-3 {
+    color: #666;
+}
+.one-3:hover {
+    color: #008842;
+}
+.button-3 {
+    display: inline-block;
+    width: 306px;
+    height: 50px;
+    font-size: 18px;
+    line-height: 50px;
+    color: #fff;
+    text-align: center;
+    background: gray;
+}
+.error-3 {
+    color: #f60000;
+}
+.register-3 .yet-3 {
+    width: 330px;
+    height: 340px;
+    padding-top: 80px;
+    font-size: 14px;
+    line-height: 56px;
+    border-left: 1px dashed #a5c9b6;
+    text-align: center;
+    float: right;
+}
+.register-3 .right-3 {
+    position: absolute;
+    top: 130px;
+    right: 230px;
+    font-size: 14px;
+    line-height: 1px;
+    text-align: right
+}
+.orange-3 {
+    text-decoration: underline;
+    color: #ef760a;
+}
+#ipone-3,#yzm-3,#aff-3 {
+    color: #444;
+}
+/* 精灵图 */
+.register-3 .ipone-3,.register-3 .set-3,.register-3 .aff-3,.register-3 .invite-3{
+    background-image: url(https://login.yiguo.com/Content/img/bg_input.png);
+    background-repeat: no-repeat;
+}
+.register-3 .ipone-3 {
+    background-position: 276px -28px;
+}
+.register-3 .set-3 {
+    background-position: 276px -68px;
+}
+.register-3 .aff-3 {
+    background-position: 276px -68px;
+}
+.register-3 .invite-3 {
+    background-position: 276px -68px;
+}
+/* 易果服务协议 */
+.popout-3-1,.popout-3-2 {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 20000;
+}
+.popout-bg-3 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    border: 0;
+    opacity: .3;
+    background: #000;
+}
+.popout-wrap-3 {
+    width: 940px;
+    height: 500px;
+    margin-top: 158px;
+    margin-left: -470px;
+    z-index: 101;
+    position: relative;
+    left: 165%;
+    background: #fff;
+}
+.popout-con-3 {
+    width: 940px;
+    height: 500px;
+    border: 1px solid  #6ab930;
+    border-color: #008842;
+}
+.title-3 {
+    position: relative;
+    height: 40px;
+    font-size: 16px;
+    line-height: 40px;
+    padding: 0;
+    border-bottom: 1px solid #6ab930;
+    font-weight: bold;
+    text-align: center;
+    background: #fafcf6;
+}
+.up-3 {
+    float: right;
+    position: absolute;
+    right: 150px;
 
-    }
-    .box-3 {
-        padding: 10px;
-        line-height: 22px;
-        font-size: 12px;
-    }
-    .register-protoco-3 {
-        height: 380px;
-        overflow-y: scroll;
-        color: #555 !important;
-    }
-    .register-protoco-3 p {
-        line-height: 20px;
-        text-align: left;
-        color: #3f3f3f;
-    }
-    .register-protoco-3 span {
-        margin-right: 5px;
-    }
-    .under-3 {
-        text-decoration: underline;
-    }
-    .register-protoco-3 a,.up-3{
-        text-decoration: none;
-        color: #333;
-    }
-    .popout-con-3 .btnbox-3 {
-        margin-top: 12px;
-        text-align: center;
-    }
-    .popout-con-3 .btnbox-3 a {
-        display: inline-block;
-        width: 250px !important;
-        height: 35px !important;
-        line-height: 35px !important;
-        font-size: 16px;
-        margin: 0 20px;
-        border-radius: 3px;
-        border: 1px solid #6ab930;
-        text-align: center;
-        color: #fff;
-        background: #008842;
-        text-decoration: none;
-        border-color: #008842;
-    }
-    .up-3:hover {
-        color: #008842;
-    }
-    .popout-3-2 .title-3 span {
-        color: #008842;
-    }
-    .title-3 .flose,.title-3 .flose-1 {
-        position: absolute;
-        right: 24px;
-        font-size: 35px;
-        font-weight: normal;
-        color: #555;
-    }
+}
+.box-3 {
+    padding: 10px;
+    line-height: 22px;
+    font-size: 12px;
+}
+.register-protoco-3 {
+    height: 380px;
+    overflow-y: scroll;
+    color: #555 !important;
+}
+.register-protoco-3 p {
+    line-height: 20px;
+    text-align: left;
+    color: #3f3f3f;
+}
+.register-protoco-3 span {
+    margin-right: 5px;
+}
+.under-3 {
+    text-decoration: underline;
+}
+.register-protoco-3 a,.up-3{
+    text-decoration: none;
+    color: #333;
+}
+.popout-con-3 .btnbox-3 {
+    margin-top: 12px;
+    text-align: center;
+}
+.popout-con-3 .btnbox-3 a {
+    display: inline-block;
+    width: 250px !important;
+    height: 35px !important;
+    line-height: 35px !important;
+    font-size: 16px;
+    margin: 0 20px;
+    border-radius: 3px;
+    border: 1px solid #6ab930;
+    text-align: center;
+    color: #fff;
+    background: #008842;
+    text-decoration: none;
+    border-color: #008842;
+}
+.up-3:hover {
+    color: #008842;
+}
+.popout-3-2 .title-3 span {
+    color: #008842;
+}
+.title-3 .flose,.title-3 .flose-1 {
+    position: absolute;
+    right: 24px;
+    font-size: 35px;
+    font-weight: normal;
+    color: #555;
+}
 </style>
 <body>
     <div>
@@ -1046,32 +1054,34 @@
                         <div class="top-3">
                             <p>
                                 <span class="pic-3">图形验证码</span>
-                                <input type="text" class="ipt-3 yzm-3" placeholder="图形验证码">
-                                <input type="text" class="chunk-3" >
+                                <input type="text" class="ipt-3 yzm-3" placeholder="图形验证码" id="ver-3">
+                                <i class="chunk-3"></i>
                                 <a href="javascript:void(0)" class="one-3">换一张</a>
-                                <span></span>
+                                <span id="l1"></span>
                             </p>
                             <p>
                                 <span class="pic-3">手机号</span>
                                 <input type="text" class="ipt-3 ipone-3" placeholder="请输入你的手机号">
-                                <span></span>
+                                <span id="ipone-3"></span>
                             </p>
                             <p>
                                 <span class="pic-3">手机验证码</span> 
                                 <input type="text" class="ipt-3 yzm-3" placeholder="手机验证码">
                                 <a href="javascript:void(0)" class="gian-3">获取验证码</a>
+                                <span id="yzm-3"></span>
                             </p>
                             <p>
                                 <span class="pic-3">设置密码</span>
-                                <input type="text" class="ipt-3 set-3" placeholder="6-12位字母、符号或数字">
+                                <input type="password" class="ipt-3 set-3" placeholder="6-12位字母、符号或数字" id="set-3">
                             </p>
                             <p>
                                 <span class="pic-3">确认密码</span>
-                                <input type="text" class="ipt-3 aff-3" placeholder="再次输入密码" name="" id="">
+                                <input type="password" class="ipt-3 aff-3" placeholder="再次输入密码" name="" id="">
+                                <span id="aff-3"></span>
                             </p>
                             <p>
                                 <span class="pic-3">邀请码</span>
-                                <input type="text" class="ipt-3 invite-3" placeholder="邀请码" name="" id="">
+                                <input type="text" class="ipt-3 invite-3" placeholder="邀请码" name="" id="invite-3">
                             </p>
                             <p>
                                 <span class="pic-3"></span>
@@ -1079,6 +1089,8 @@
                                     <input type="checkbox" name="" id="read" class="read-3"> 我已阅读并同意
                                     <a href="javascript:void(0)" class="green-3">《易果服务协议》</a>
                                     <a href="javascript:void(0)" class="green-3-1">《隐私政策》</a>
+                                    <span class="error-3">
+                                    </span>
                                 </label>
                             </p>
                             <p class="p1">
@@ -1137,9 +1149,67 @@
             },1000)
             }
         })
-        $(".read-3").click(function() { 
-            $(".button-3").css("background","#008842")
+        // 注册颜色
+        var flag = 1; 
+        $('.read-3').click(function() {
+        if (flag == 1) { 
+            $(".button-3").css('background', '#008842');
+            flag = 2;
+        } else { 
+            $(".button-3").css('background', '');   
+        flag = 1;
+        }
+        });
+        // 点击注册
+        $(".button-3").click(function() {
+            if(flag == 1) {
+                $(".error-3").text("* 请接受服务协议")
+            }else {
+                $(".error-3").text("")
+            }
+            if(flag == 2) {
+                $("#ipone-3").text("* 手机号不能为空")
+            }else {
+                $("#ipone-3").text("")
+            }
         })
+        // 点击验证
+        $("#set-3").click(function() {
+            $("#yzm-3").text("* 验证码不能为空")
+        })
+        $("#invite-3").click(function() {
+            $("#aff-3").text("* 密码不能为空")
+        })
+        // 随机验证码
+        var code; 
+          function createCode(){ 
+            code = '';
+            var codeLength = 4;
+            var codeV = $(".chunk-3"); 
+            var random = new Array(0,1,2,3,4,5,6,7,8,9,'A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R', 'S','T','U','V','W','X','Y','Z'); 
+            for(var i = 0; i < codeLength; i++){  
+               var index = Math.floor(Math.random()*36); 
+               code += random[index];
+          } 
+            codeV.text(code);
+          } 
+          createCode(); 
+          $(".one-3").bind('click',function() { 
+              createCode(); 
+            }); 
+          $("#ver-3").bind('click',function() { 
+             var oValue = $("#ver-3").val().toUpperCase(); 
+             $("#l1").html(""); 
+            if(oValue ==""){ 
+              $("#l1").html("<font color='red'>* 请输入验证码</font>"); 
+            }else if(oValue != code){ 
+              $("#l1").html("<font color='red'>* 验证码不正确，请重新输入</font>"); 
+              oValue = ""; 
+              createCode(); 
+            }else{ 
+              $("#l1").html(); 
+            } 
+          }); 
     })
     </script>
 </body>

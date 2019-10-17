@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="buy.css">
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="warp-3-1">
+        <div class="crumbs-3">
+            <a class="index-3" href="">首页</a> >
+            <a class="my-3" href="">我的易果</a>
+            <span class="bought-3"> >
+                <a class="bought-3-1" href="">购买过的商品</a>
+            </span>
+        </div>
+        <div class=father-3>
+            <div class="sub-3">
+                <div class="menu-3">
+                    <dl>
+                        <dt>交易信息</dt>
+                    </dl>
+                    <dd>
+                        <ul>
+                            <li>
+                                <a href="">我的订单</a>
+                            </li>
+                            <li>
+                                <a href="">我的优惠券</a>
+                            </li>
+                            <li>
+                                <a href="">我的悠币</a>
+                            </li>
+                            <li>
+                                <a href="">我的礼物兑换券</a>
+                            </li>
+                            <li>
+                                <a class="pass-3-1" href="">购买过的商品</a>
+                            </li>
+                            <li>
+                                <a style="color: #008842;" href="">我的收藏</a>
+                            </li>
+                            <li>
+                                <a href="">评论商品</a>
+                            </li>
+                        </ul>
+                    </dd>
+                    <dl>
+                        <dt>账号信息</dt>
+                    </dl>
+                    <dd>
+                        <ul>
+                            <li>
+                                <a href="">卡包余额</a>
+                            </li>
+                            <li>
+                                <a href="">个人资料</a>
+                            </li>
+                            <li>
+                                <a href="">账号安全</a>
+                            </li>
+                            <li>
+                                <a href="">收货地址管理</a>
+                            </li>
+                            <li>
+                                <a href="">企业福利入口</a>
+                            </li>
+                        </ul>
+                    </dd>
+                    <dl>
+                        <dt>售后服务</dt>
+                    </dl>
+                    <dd>
+                        <ul>
+                            <li>
+                                <a href="">在线退换货</a>
+                            </li>
+                            <li>
+                                <a href="">投诉建议</a>
+                            </li>
+                        </ul>
+                    </dd>
+                </div>
+            </div>
+            <div class="main-3-1">
+                <p class="shopping-3">购买过的商品</p>
+                <div class="toorlbar-3">
+                    <label for="all-3">
+                        <input type="checkbox" name="" id="all-3" class="all-3">全选
+                    </label>
+                    <a class="orange-3-1" href="javascript:(0)">取消收藏</a>
+                    <a class="orange-3" href="javascript:(0)">
+                        <i></i>
+                        加入购物车</a>
+                </div>
+                <div class="noun-3">
+                    <table class="table-3">
+                        <tbody>
+                            <tr>
+                                <th class="check-3"></th>
+                                <th class="name-3">商品名称</th>
+                                <th class="price-3">商品价格</th>
+                                <th class="opera-3">操作</th>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="record-3">记录为空</div>
+            </div>
+        </div>
+    </div>
+    <div class="own-3">
+        <div class="case-3">
+            <div class="hint-3">
+                <div class="reminder-3">
+                    <i></i>
+                    提示
+                </div>
+                <div class="not-3">
+                    <p>未选中商品</p>
+                    <div class="btnbox-3">
+                        <a class="confirm-3" href="javascript:(0)">确定</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="none-3"></div>
+    </div>
+    <script>
+        $(document).ready(function() {
+            $(".orange-3,.orange-3-1").click(function() {
+                $(".own-3").show();
+            })
+            $(".confirm-3").click(function() {
+                $(".own-3").hide();
+            })
+        })
+    </script>
+</body>
+</html>

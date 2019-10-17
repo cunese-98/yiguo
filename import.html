@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.js"></script>
     <title>输入账号</title>
 </head>
 <style>
@@ -92,6 +93,20 @@ body {
     color: #aaa;
     text-decoration: none;
 }
+.chunk-3-2 {
+    padding: 5px;
+    margin: 20px;
+    padding-bottom: 10px;
+    font-size: large;
+    border: 1px solid #c1c1c1;
+    background: #fff;
+}
+.barter-3 {
+    color: #666;
+}
+.barter-3:hover {
+    color: #008842;
+}
 .center-3 {
     text-align: center;
 }
@@ -108,6 +123,9 @@ body {
 }
 .step-3-1 {
     background-position: 0 0;
+}
+#ipone-3-1 {
+    color: #444;
 }
 </style>
 <body>
@@ -126,18 +144,63 @@ body {
                 <p>
                     <span class="email-3">手机号或邮箱</span>
                     <input type="text" name="" class="ipt-3" id="" placeholder="请输入你的手机号或邮箱">
+                    <span id="ipone-3-1"></span>
                 </p>
                 <p>
                     <span class="email-3">验证码</span>
-                    <input type="text" name="" class="ipt-3 ipt1-3" id="" placeholder="请输入答案">
-                    <img src="" alt="">
+                    <input type="text" name="" class="ipt-3 ipt1-3" id="answer-3" placeholder="请输入答案">
+                    <i class="chunk-3-2"></i>
                     <a class="barter-3" href="javascript:void(0)">换一张</a>
+                    <span id="l3"></span>
                 </p>
                 <div class="center-3">
-                    <a class="foor-3" href="verify.html">下一步</a>
+                    <a class="foor-3" href="javascript:void(0)">下一步</a>
                 </div>
             </div>
         </div>
     </div>
+    <script>
+        $(document).ready(function() {
+            // 校验码
+            var code; 
+            function createCode(){ 
+            code = '';
+            var codeLength = 4;
+            var codeV = $(".chunk-3-2"); 
+            var random = new Array(0,1,2,3,4,5,6,7,8,9,'A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R', 'S','T','U','V','W','X','Y','Z'); 
+            for(var i = 0; i < codeLength; i++){  
+                var index = Math.floor(Math.random()*36); 
+                code += random[index];
+            } 
+            codeV.text(code);
+            } 
+            createCode(); 
+            $(".barter-3").bind('click',function() { 
+                createCode(); 
+            });
+            $("#answer-3").bind('click',function() { 
+             var oValue = $("#answer-3").val().toUpperCase(); 
+             $("#l3").html(""); 
+            if(oValue ==""){ 
+              $("#l3").html("<font color='red'>* 请输入校验码</font>"); 
+            }else if(oValue != code){ 
+              $("#l3").html("<font color='red'>* 校验码错误</font>"); 
+              oValue = ""; 
+              createCode(); 
+            }else{ 
+              $("#l3").html(); 
+            }
+            }); 
+            // 点击显示
+            var show = 1;
+            $(".foor-3").click(function() {
+                if(show == 1) {
+                    $("#ipone-3-1").text("* 请输入你的手机号或邮箱")
+                }else {
+                    $("#ipone-3-1").text("")
+                }
+            })
+        })
+    </script>
 </body>
 </html>

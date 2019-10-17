@@ -1,0 +1,221 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+/* body {
+    color: #f7f8f8;
+} */
+.warp-3-1 {
+    width: 1200px;
+    margin: 0 auto;
+}
+.crumbs-3 {
+    margin: 10px 0;
+    margin-left: -10px;
+}
+.crumbs-3 a {
+    margin: 0 10px;
+    text-decoration: none;
+    outline: none;
+    font-size: 12px;
+    font-family: "宋体";
+    color: #444;
+}
+.crumbs-3 span .bought-3-1 {
+    text-decoration: underline;
+    color: #e8380d;
+}
+.sub-3 {
+    width: 196px;
+    float: left;
+}
+.sub-3 .menu-3 {
+    width: 163px;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #eff1ed;
+    background: #fff;
+}
+.sub-3 .menu-3 ul,.sub-3 .menu-3 li,.sub-3 .menu-3  dl,.sub-3 .menu-3 dt,.sub-3 .menu-3 dd {
+    list-style: none;
+    font-family: "宋体";
+}
+.sub-3 .menu-3 dt {
+    height: 30px;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 30px;
+    color: #333;  
+}
+.sub-3 .menu-3 dd {
+    margin-bottom: 10px;
+}
+.sub-3 .menu-3 dd a {
+    font-size: 12px;
+    line-height: 30px;
+    color: #666;
+    text-decoration: none;
+}
+.sub-3 .menu-3 dd a:hover {
+    color: #008842;
+}
+/* 购买过的商品 */
+.main-3-1 {
+    position: relative;
+    float: left;
+    width: 942px;
+    padding: 20px;
+    margin-left: 20px;
+    border: 1px solid #e3e6e0;
+    background: #fff;
+}
+.main-3-1 .shopping-3 {
+    position: relative;
+    font-size: 14px;
+    font-weight: bold;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #008842;
+    color: #008842;
+}
+.main-3-1 .toorlbar-3 {
+    position: relative;
+    height: 28px;
+    padding: 10px 26px;
+}
+.main-3-1 .toorlbar-3 label {
+    margin-right: 30px;
+    font-size: 12px;
+}
+.main-3-1 .toorlbar-3 label input {
+    margin-right: 30px;
+    vertical-align: middle;
+}
+.main-3-1 .toorlbar-3 .orange-3,.main-3-1 .toorlbar-3 .orange-3-1 {
+    display: inline-block;
+    width: 110px;
+    height: 26px;
+    line-height: 26px;
+    text-align: center;
+    margin-right: 10px;
+    font-size: 12px;
+    border: 1px solid #f14b00;
+    color: #f14b00;
+    background-color: #fff2ec;
+    text-decoration: none;
+}
+/* 商品名称等 */
+.table-3 {
+    width: 100%;
+    margin-bottom: 10px;
+    border: 1px solid #ebebeb;
+    border-collapse: collapse;
+}
+.table-3 th {
+    height: 40px;
+    padding: 0 10px;
+    font-size: 12px;
+    line-height: 40px;
+    font-weight: normal;
+    font-family: "SimSun";
+    color: #262626;
+    background: #f1f1f1;
+}
+.check-3 {
+    width: 38px;
+    text-align: center;
+}
+.name-3 {
+    text-align: left;
+}
+.price-3 {
+    width: 140px;
+    text-align: center;
+}
+.opera-3 {
+    width: 100px;
+    text-align: center;
+}
+.record-3 {
+    font-size: 12px;
+    color: #444;
+}
+/* 精灵图 */
+.toorlbar-3 i{
+    display: inline-block;
+    width: 20px;
+    height: 16px;
+    margin-right: 6px;
+    vertical-align: middle;
+    background-image: url(http://static01.yiguo.com/utaste/images/btn_icon.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+/* 弹出框 */
+.own-3 {
+    display: none;
+}
+.case-3 {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    width: 418px;
+    height: auto;
+    margin-left: -210px;
+    margin-top: -98px;
+    border: 1px solid #008842;
+    background: #fff;
+    z-index: 100;
+}
+.reminder-3 {
+    position: relative;
+    padding: 7px 3px;
+    font-size: 14px;
+    text-align: center;
+    color: #fff;
+    background: #008842;
+}
+.not-3 {
+    font-size: 12px;
+    line-height: 22px;
+    padding: 25px 30px;
+}
+.not-3 p {
+    font-size: 14px;
+    padding-top: 15px;
+    font-family: "宋体";
+    text-align: center;
+    color: #3f3f3f;
+}
+.btnbox-3 {
+    margin-top: 45px;
+    text-align: center;
+}
+.confirm-3 {
+    display: inline-block;
+    width: 90px;
+    height: 30px;
+    margin: 0 20px;
+    line-height: 30px;
+    border: 1px solid #008842;
+    color: #fff;
+    background: #008842;
+    text-decoration: none;
+}
+.none-3 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .2;
+    z-index: 10;
+    background: #000;
+}
+.reminder-3 i {
+    display: inline-block;
+    width: 13px;
+    height: 16px;
+    margin-right: 10px;
+    vertical-align: middle;
+    background: url(http://static01.yiguo.com/utaste/images/promotion-img.png) no-repeat -62px -39px;
+}
