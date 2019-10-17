@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    color: #444;
+}
+li {
+    list-style: none;
+}
+body {
+    background: #f7f8f8;
+    font-size: "Microsoft YaHei";
+}
+.navigate-con {
+    display: none;
+}
+.navigate-right {
+    width: 500px;
+}
+.one {
+    display: block;
+}
+.two {
+    display: none;
+    position: absolute;
+    top: 0px;
+    left: 179px;
+    height: 500px;
+    width: 265px;
+    border: 1px solid #bbb;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 17px 20px;
+    box-sizing: border-box;
+}
+.show {
+    display: block;
+}
+.navigate {
+    width: 178px;
+    position: absolute;
+    top: 0px;
+}
+.classify {
+    display: inline-block;
+    background: #008842;
+    width: 180px;
+    height: 38px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #fff;
+    line-height: 38px;
+    text-align: center;
+}
+.three {
+    width: 163px;
+    height: 22px;
+    background: rgba(255, 255, 255, 0.9);
+    border-bottom: 1px solid rgba(255, 255, 255, 0);
+    border-top: 1px solid rgba(255, 255, 255, 0);
+    border-left: 1px solid rgba(255, 255, 255, 0);
+    padding: 9px 0 9px 15px;
+    line-height: 22px;
+}
+.three a {
+    display: inline-block;
+    font: 14px normal;
+    margin-left: 15px;
+}
+.icon {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-bottom: -5px;
+}
+.icon-one {
+    background: url("./images/nav-icon.png") no-repeat 0px 0px;
+}
+.icon-two {
+    background: url("./images/nav-icon.png") no-repeat -25px 0px;
+}
+.icon-three {
+    background: url("./images/nav-icon.png") no-repeat -47px 0px;
+}
+.icon-five {
+    background: url("./images/nav-icon.png") no-repeat 0px 0px;
+}
+.icon-six {
+    background: url("./images/nav-icon.png") no-repeat -96px 0px;
+}
+.icon-sev {
+    background: url("./images/nav-icon.png") no-repeat -119px 0px;
+}
+.icon-eig {
+    background: url("./images/nav-icon.png") no-repeat -145px 0px;
+}
+.icon-nin {
+    background: url("./images/nav-icon.png") no-repeat -169px 0px;
+}
+.icon-ten {
+    background: url("./images/nav-icon.png") no-repeat -192px 0px;
+}
+.icon-ele {
+    background: url("./images/nav-icon.png") no-repeat -217px 0px;
+}
+.icon-thi {
+    background: url("./images/nav-icon.png") no-repeat -243px 0px;
+}
+.icon-four {
+    background: url("./images/nav-icon.png") no-repeat -73px 0px;
+}
+.content {
+    width: 1200px;
+    margin: auto;
+}
+.three:hover {
+    background: #fff;
+    border-right: none;
+    border-bottom: 1px solid #bbb;
+    border-top: 1px solid #bbb;
+    border-left: 1px solid #bbb;
+    border-right: 1px solid #fff;
+}
+.three .navigate-a:after {
+    content: '>';
+    position: absolute;
+    opacity: 0;
+    right: 25px;
+    font-size: 15px;
+}
+.three:hover .navigate-a {
+    color: #008842;
+    margin-left: 10px;
+    transition: 0.5s;
+    
+}
+.three:hover .icon {
+    margin-left: 10px;
+    transition: 0.5s;
+}
+.three:hover .navigate-a:after {
+    opacity: 1;
+}
+.border-right {
+    border-right: 1px solid #bbb;
+}
+.three:hover .two {
+    display: block;
+}
+.two>a {
+    color: #008842;
+    text-decoration: underline;
+    font-size: 18px;
+}
+.two-one a {
+    margin-right: 30px;
+    color: #686868;
+    font-size: 12px;
+}
+.two-one a:hover {
+    color: #008842;
+}
+img {
+    border: none;
+}
+.two img {
+    position: absolute;
+    bottom: 0;
+}
+.j-wrap16 {
+    width: 1200px;
+    margin: 0 auto;
+    font-size: 12px;
+    font-family: Arial,Verdana,"\5b8b\4f53";
+    overflow: hidden;
+}
+.nav-items16 {
+    margin-left: 180px;
+    overflow: hidden;
+    width: 1020px;
+    height: 37px;
+    line-height: 37px;
+    border-bottom: 1px solid #008842;
+}
+.nav-items16 ul li {
+    float: left;
+    width: 115px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    list-style: none;
+}
+.nav-items16 a {
+    color: #444;
+    text-decoration: none;
+    outline: none;
+}
+.j-wrap161 {
+    width: 1200px;
+    margin: 20px auto 10px;
+    font-size: 12px;
+    font-family: Arial,Verdana,"\5b8b\4f53";
+}
+.j-select16 {
+    line-height: 25px;
+    margin: 20px 0;
+}
+.j-select16 .all16 {
+    overflow: hidden;
+    background: #eaeaea;
+    border: 1px solid #c7c7c7;
+    border-right-color: #e5e5e5;
+}
+.j-select16 .tit {
+    float: left;
+    width: 78px;
+    padding: 5px 0 5px 20px;
+    color: #909090;
+}
+.j-select16 ul {
+    float: left;
+    width: 1100px;
+    padding: 5px 0;
+    background: #f1f1f1;
+}
+.j-select16 a {
+    display: inline-block;
+    white-space: nowrap;
+    padding: 0 15px;
+    text-decoration: none;
+    color: #777;
+}
+.j-select16 li::after {
+    content: "|";
+}
+.j-select16 li {
+    display: inline;
+    outline: none;
+}
+.filter16 {
+    padding: 5px 10px;
+    background: #eaeaea;
+    overflow: hidden;
+}
+.filter_sort16 {
+    float: left;
+    overflow: hidden;
+}
+.filter_sort16 a {
+    display: block;
+    float: left;
+    height: 18px;
+    line-height: 18px;
+    margin-left: -1px;
+    padding: 5px 10px;
+    border: 1px solid #c7c7c7;
+    background: #fff;
+    color: #444;
+    text-decoration: none;
+    outline: none;
+}
+.filter_sort16 .on16 {
+    background: #eee;
+}
+.filter_ub16 {
+    float: left;
+    margin-left: 28px;
+    overflow: hidden;
+}
+.filter_ub16 label {
+    float: left;
+    margin-right: 15px;
+    padding: 8px 0;
+}
+.filter_ub16 input {
+    margin: 0 5px 0 0;
+    vertical-align: middle;
+}
+.filter_sort16 i {
+    display: inline-block;
+    vertical-align: middle;
+}
+.filter_sort16 a i {
+    width: 10px;
+    height: 16px;
+    margin-left: 3px;
+    background: url("./images/filter_icon.png") no-repeat 0 0;
+}
+.filter_sort16 .price16 i {
+    background-position: -20px 0;
+}
+.filter_sort16 a:hover {
+    color: #008842;
+}
+.filter_sort16 .c-price16:hover i {
+    background-position: -10px 0;
+}
+</style>
+<body>
+    <div class="j-wrap16">
+        <div class="content">
+            <div class="navigate">
+                <a href="javascript:void(0)" class="classify">全部商品分类▼</a>
+                <div class="navigate-con">
+                    <div class="one">
+                        <div class="three">
+                            <i class="icon-one icon"></i>
+                            <a href="javascript:void(0)" class="navigate-a">进口水果</a>
+                            <div class="two">
+                                <a href="">进口水果</a>
+                                <div class="two-one">
+                                    <a href="">奇异果</a>
+                                    <a href="">车厘子</a>
+                                    <a href="">李</a>
+                                    <a href="">莓</a>
+                                    <a href="">牛油果</a>
+                                    <a href="">提子</a>
+                                    <a href="">苹果</a>
+                                    <a href="">梨</a>
+                                    <a href="">柑桔橙柚</a>
+                                    <a href="">火龙果</a>
+                                    <a href="">椰子</a>
+                                    <a href="">芒果</a>
+                                    <a href="">凤梨</a>
+                                    <a href="">榴莲</a>
+                                    <a href="">热带水果</a>
+                                    <a href="">时令水果</a>
+                                    <a href="">原箱水果</a>
+                                </div>
+                                <div>
+                                    <a href="">
+                                        <img src="http://img05.yiguoimg.com/e/others/150929/9570160763248445.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="three">
+                            <i class="icon-two icon"></i>
+                            <a href="javascript:void(0)" class="navigate-a">国产水果</a>
+                            <div class="two">
+                                <a href="">国产水果</a>
+                                <div class="two-one">
+                                    <a href="">苹果</a>
+                                    <a href="">梨</a>
+                                    <a href="">柑桔橙柚</a>
+                                    <a href="">猕猴桃</a>
+                                    <a href="">瓜</a>
+                                    <a href="">葡萄</a>
+                                    <a href="">桃</a>
+                                    <a href="">梨</a>
+                                    <a href="">枣</a>
+                                    <a href="">梅</a>
+                                    <a href="">芒果</a>
+                                    <a href="">凤梨</a>
+                                    <a href="">榴莲</a>
+                                    <a href="">热带水果</a>
+                                    <a href="">时令水果</a>
+                                    <a href="">原箱水果</a>
+                                </div>
+                                <div>
+                                    <a href="">
+                                        <img src="http://img05.yiguoimg.com/e/others/150929/9570160763379517.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="three">
+                            <i class="icon-three icon"></i>
+                            <a href="javascript:void(0)" class="navigate-a">精选肉类</a>
+                            <div class="two">
+                                <a href="">精选肉类</a>
+                                <div class="two-one">
+                                    <a href="">牛排</a>
+                                    <a href="">进口牛肉</a>
+                                    <a href="">国产牛肉</a>
+                                    <a href="">猪肉</a>
+                                    <a href="">羊肉</a>
+                                    <a href="">肉制品</a>
+                                </div>
+                                <div>
+                                    <a href="">
+                                        <img src="http://img05.yiguoimg.com/e/others/150929/9570160763445053.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="three">
+                            <i class="icon-four icon"></i>
+                            <a href="javascript:void(0)" class="navigate-a">禽类蛋品</a>
+                            <div class="two">
+                                <a href="">禽类蛋品</a>
+                                <div class="two-one">
+                                    <a href="">鸡</a>
+                                    <a href="">鸭</a>
+                                    <a href="">鹅/鸽/特色禽类/蛋</a>
+                                </div>
+                                <div>
+                                    <img src="http://img05.yiguoimg.com/e/others/150929/9570160763510589.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="three ">
+                            <i class="icon-five icon"></i>
+                            <a href="javascript:void(0)" class="navigate-a">即烹美食</a>
+                            <div class="two">
+                                <a href="">即烹美食</a>
+                                <div class="two-one">
+                                    <a href="">独家秘制</a>
+                                    <a href="">中华美食</a>
+                                </div>
+                                <div>
+                                    <a href="">
+                                        <img src="" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="three">
+                            <i class="icon-six icon"></i>
+                            <a href="javascript:void(0)" class="navigate-a">海鲜水产</a>
+                            <div class="two">
+                                <a href="">海鲜水产</a>
+                                <div class="two-one">
+                                    <a href="">鳕鱼</a>
+                                    <a href="">虾仁</a>
+                                    <a href="">大闸蟹卷</a>
+                                    <a href="">鱼</a>
+                                    <a href="">三文鱼</a>
+                                    <a href="">虾</a>
+                                    <a href="">蟹</a>
+                                    <a href="">贝</a>
+                                    <a href="">鲜活</a>
+                                    <a href="">海参</a>
+                                    <a href="">加工水产</a>
+                                </div>
+                                <div>
+                                    <a href="">
+                                        <img src="http://img05.yiguoimg.com/e/others/150929/9570160763576125.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="three">
+                            <i class="icon-sev icon"></i>
+                            <a href="javascript:void(0)" class="navigate-a">乳品糕点</a>
+                            <div class="two">
+                                <a href="">乳品糕点</a>
+                                <div class="two-one">
+                                    <a href="">奶酪</a>
+                                    <a href="">黄油/奶油</a>
+                                    <a href="">乳品</a>
+                                    <a href="">面包</a>
+                                    <a href="">蛋糕</a>
+                                    <a href="">甜点</a>
+                                </div>
+                                <div>
+                                    <a href="">
+                                        <img src="http://img05.yiguoimg.com/e/others/150929/9570160763641661.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="three">
+                            <i class="icon-eig icon"></i>
+                            <a href="javascript:void(0)" class="navigate-a">新鲜蔬菜</a>
+                            <div class="two">
+                                <a href="">新鲜蔬菜</a>
+                                <div class="two-one">
+                                    <a href="">叶菜类</a>
+                                    <a href="">根茎类</a>
+                                    <a href="">茄果/瓜果类</a>
+                                    <a href="">花菜/豆类</a>
+                                    <a href="">香料</a>
+                                    <a href="">菌菇</a>
+                                    <a href="">沙拉菜</a>
+                                    <a href="">冷冻蔬菜</a>
+                                    <a href="">豆制品</a>
+                                    <a href="">葱蒜类</a>
+                                    <a href="">蔬菜组合</a>
+                                    <a href="">净菜类</a>
+                                </div>
+                                <div>
+                                    <a href="">
+                                        <img src="http://img05.yiguoimg.com/e/others/150930/9570161550040894.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="three">
+                            <i class="icon-nin icon"></i>
+                            <a href="javascript:void(0)" class="navigate-a">方便速食</a>
+                            <div class="two">
+                                <a href="">方便速食</a>
+                                <div class="two-one">
+                                    <a href="">冷冻点心</a>
+                                    <a href="">中式主食</a>
+                                    <a href="">火锅料</a>
+                                    <a href="">半成品菜</a>
+                                </div>
+                                <div>
+                                    <a href="">
+                                        <img src="http://img05.yiguoimg.com/e/others/150929/9570160763838269.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="three">
+                            <i class="icon-ten icon"></i>
+                            <a href="javascript:void(0)" class="navigate-a">粮油杂货</a>
+                            <div class="two">
+                                <a href="">粮油杂货</a>
+                                <div class="two-one">
+                                    <a href="">米</a>
+                                    <a href="">杂粮</a>
+                                    <a href="">面/面制品</a>
+                                    <a href="">油</a>
+                                    <a href="">调味料</a>
+                                    <a href="">干货</a>
+                                    <a href="">果干/零食</a>
+                                </div>
+                                <div>
+                                    <a href="">
+                                        <img src="http://img05.yiguoimg.com/e/others/150929/9570160757940029.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="three">
+                            <i class="icon-ele icon"></i>
+                            <a href="javascript:void(0)" class="navigate-a">食品饮料</a>
+    
+                            <div class="two">
+                                <a href="">食品饮料</a>
+                                <div class="two-one">
+                                    <a href="">水</a>
+                                    <a href="">冲调饮品</a>
+                                    <a href="">葡萄酒/酒具</a>
+                                    <a href="">休闲食品</a>
+                                    <a href="">啤酒</a>
+                                </div>
+                                <div>
+                                    <a href="">
+                                        <img src="" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="three">
+                            <i class="icon-thi icon"></i>
+                            <a href="javascript:void(0)" class="navigate-a">礼品礼卷</a>
+                            <div class="two">
+                                <a href="">礼品礼券</a>
+                                <div class="two-one">
+                                    <a href="">礼品礼盒</a>
+                                    <a href="">礼卡礼券</a>
+                                    <a href="">原膳礼盒</a>
+                                </div>
+                                <div>
+                                    <a href="">
+                                        <img src="http://img05.yiguoimg.com/e/others/150929/9570160763903805.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="nav-items16">
+            <ul>
+                <li>
+                    <a href="javascript:void(0)" target="_blank">新品专区</a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)" target="_blank">新品专区</a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)" target="_blank">优质生活</a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)" target="_blank">优质生活</a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)" target="_blank">银行专区</a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)" target="_blank">菜谱专栏</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="j-wrap161">
+        <div class="j-select16">
+            <div class="all16">
+                <div class="tit">►所有分类</div>
+                <ul class="filter_category">
+                    <li><a href="javascript:void(0)">进口水果</a></li>
+                    <li><a href="javascript:void(0)">国产水果</a></li>
+                    <li><a href="javascript:void(0)">精选肉类</a></li>
+                    <li><a href="javascript:void(0)">禽类蛋品</a></li>
+                    <li><a href="javascript:void(0)">海鲜水产</a></li>
+                    <li><a href="javascript:void(0)">乳品糕点</a></li>
+                    <li><a href="javascript:void(0)">方便速食</a></li>
+                    <li><a href="javascript:void(0)">粮油杂货</a></li>
+                    <li><a href="javascript:void(0)">食品饮料</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="filter16">
+            <div class="filter_sort16">
+                <a class="on16" href="javascript:void(0)">默认排序</a>
+                <a class="c-price16" href="javascript:void(0)">销量<i></i></a>
+                <a class="price16" href="javascript:void(0)">悠币<i></i></a>
+                <a class="price16" href="javascript:void(0)">价格<i></i></a>
+            </div>
+            <div class="filter_ub16">
+                <label><input type="checkbox">仅显示全额兑换</label>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".classify").click(function () {
+                $(".navigate-con").fadeToggle(0)
+            })
+            $()
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+.j-myyb {
+    width: 942px;
+    padding: 20px;
+    border: 1px solid #e3e6e0;
+    background: #fff;
+}
+.j-main {
+    position: relative;
+    float: left;
+    margin-left: 20px;
+}
+.j-main .j-title {
+    position: relative;
+    padding-bottom: 10px;
+    font-weight: bold;
+    color: #008842;
+    font-size: 14px;
+    border-bottom: 1px solid #008842;
+}
+.j-yb {
+    margin: 20px 0;
+    font-size: 12px;
+    font-family: Arial,Verdana,"\5b8b\4f53";
+}
+.j-yb b {
+    color: #e93005;
+}
+.btn-A1 {
+    display: inline-block;
+    margin: 0 15px;
+    font-size: 14px;
+    color: #fff;
+    border: 1px solid #008842;
+    background: #008842;
+    text-decoration: none;
+}
+.btn-A2 {
+    color: #ef760a;
+}
+.j-subtitle {
+    position: relative;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ebebeb;
+}
+.j-subtitle b {
+    display: inline-block;
+    font-size: 14px;
+    padding: 10px 16px;
+    color: #008842;
+    font-weight: bold;
+    border-bottom: 3px solid #008842;
+}
+.j-select {
+    position: absolute;
+    top: 12px;
+    right: 0;
+    overflow: hidden;
+}
+#j-selspan {
+    float: right;
+}
+#j-selstate {
+    float: right;
+    margin-right: 10px;
+}
+.myyg-table {
+    font-size: 12px;
+    font-family: Arial,Verdana,"\5b8b\4f53";
+    margin-bottom: 40px;
+}
+.myyg-table table {
+    width: 100%;
+    text-align: center;
+   
+}
+.myyg-table thead {
+    background: #f7f8f8;
+}
+.myyg-table td {
+    height: 38px;
+}
+.j-paging {
+    clear: both;
+    float: right;
+    color: #333;
+    font-size: 12px;
+    font-family: Arial,Verdana,"\5b8b\4f53";
+}
+.j-paging .paging-num, .j-paging .paging-total, .j-paging .paging-form {
+    float: left;
+    margin-left: 10px;
+}
+.paging-num a {
+    display: block;
+    float: left;
+    height: 22px;
+    margin: 0 3px;
+    overflow: hidden;
+    background: #fff;
+    border: 1px solid #ccc;
+    padding: 0 7px;
+    line-height: 22px;
+    color: #333;
+    text-decoration: none;
+    outline: none;
+    cursor: pointer;
+}
+.paging-num a:hover {
+    border: 1px solid #008842;
+    color: #008842;
+}
+.paging-num a:nth-child(2) {
+    border: 1px solid #008842;
+    color: #008842;
+}
+.paging-total {
+    line-height: 24px;
+}
+.paging-form span {
+    line-height: 24px;
+    margin: 0 5px;
+    vertical-align: middle;
+}
+.paging-form input {
+    text-align: center;
+    border: 1px solid #ccc;
+    width: 28px;
+    height: 22px;
+    padding: 0;
+    vertical-align: middle;
+    margin-right: 5px;
+    line-height: 22px;
+}
+.paging-form button {
+    background: #f4f4f4;
+    cursor: pointer;
+    border: none;
+    color: #333;
+    width: 43px;
+    height: 24px;
+    vertical-align: middle;
+    line-height: 22px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+</style>
+<body>
+    <div class="j-main j-myyb">
+        <div class="j-title">我的悠币</div>
+        <div class="j-yb">
+            当前可用悠币：
+            <b>160.00</b> 
+            个
+            <a class="btn-A1" href="javascript:void(0)" target="_blank">兑换商品</a>
+            <a class="btn-A2" href="javascript:void(0)" target="_blank">如何获取悠币</a>
+        </div>
+        <div class="j-subtitle clearfix">
+            <b>获取明细</b>
+            <div class="j-select">
+                <div id="j-selspan">
+                    <select >
+                        <option value="0">近一个月记录</option>
+                        <option value="1">三个月内记录</option>
+                        <option value="2">全部记录</option>
+                    </select>
+                </div>
+                <div id="j-selstate">
+                    <select >
+                        <option value="0">全部</option>
+                        <option value="1">支出悠币</option>
+                        <option value="2">获取悠币</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="myyg-table">
+            <table>
+                <thead>
+                    <tr>
+                        <td width="10%">序号</td>
+                        <td width="25%">日期</td>
+                        <td width="15%">收支</td>
+                        <td width="15%">来源</td>
+                        <td width="20%">详情</td>
+                        <td width="15%">账户悠币余额</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>2019-10-16 08:55:18</td>
+                        <td>+10.00个</td>
+                        <td>登录送悠币</td>
+                        <td></td>
+                        <td>170.00</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>2019-10-15 18:33:24</td>
+                        <td>+10.00个</td>
+                        <td>登录送悠币</td>
+                        <td></td>
+                        <td>160.00</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>2019-10-14 13:52:08</td>
+                        <td>+10.00个</td>
+                        <td>登录送悠币</td>
+                        <td></td>
+                        <td>150.00</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>2019-10-13 12:15:28</td>
+                        <td>+10.00个</td>
+                        <td>登录送悠币</td>
+                        <td></td>
+                        <td>140.00</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>2019-10-09 15:50:31</td>
+                        <td>+10.00个</td>
+                        <td>登录送悠币</td>
+                        <td></td>
+                        <td>130.00</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>2019-09-29 17:21:54</td>
+                        <td>+10.00个</td>
+                        <td>登录送悠币</td>
+                        <td></td>
+                        <td>120.00</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>2019-09-23 10:03:03</td>
+                        <td>+10.00个</td>
+                        <td>登录送悠币</td>
+                        <td></td>
+                        <td>110.00</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="j-paging">
+            <div class="paging-num">
+                <a href="javascript:void(0)" >上一页</a>
+                <a href="javascript:void(0)" >1</a>
+                <a href="javascript:void(0)" >下一页</a>
+            </div>
+            <div class="paging-total">共 1页</div>
+            <div class="paging-form">
+                <span>到第</span>
+                <input type="text" value="1">
+                <span>页</span>
+                <button>确定</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
