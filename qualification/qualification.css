@@ -1,3 +1,4 @@
+
 body {
     font-size: 12px;
     font-family: Arial,Verdana,"\5b8b\4f53";
@@ -116,6 +117,9 @@ h4 {
     margin-top: 5px;
     line-height: 23px;
 }
+.tt {
+    color: #404040;
+}
 .payment p {
     text-align: justify;
 }
@@ -232,11 +236,149 @@ table {
     font-family: "微软雅黑";
     color: #000;
     margin: 5px 0;
+    text-indent: 30px;
 }
 .h1 {
     font-size: 20px;
     font-weight: bold;
+    margin-right: 20px;
 }
 .black {
     color: #000;
+}
+.H-txt3 {
+    font-size: 14px;
+    line-height: 20px;
+    font-family: "微软雅黑";
+    color: #444;
+}
+.H-link {
+    width: 163px;
+    height: 14px;
+    display: inline-block;
+}
+.H-link a {
+    color: #7a7a7a;
+}
+.H-link a:hover {
+    color: #008842;
+    text-decoration: underline;
+}
+.H-apply {
+    margin-top: 5px;
+}
+.apply {
+    width: 510px;
+    display: inline-block;
+}
+.linkform {
+    width: 510px;
+    height: 383px;
+    float: right;
+}
+.linkform span {
+    display: inline-block;
+    width: 120px;
+    height: 30px;
+    text-align: right;
+}
+.linkform input {
+    width: 310px;
+    padding: 5px 10px;
+    line-height: 20px;
+    border: 1px solid #bfbfbf;
+    background: #fff;
+    margin-top: 20px;
+}
+.linkform textarea {
+    width: 310px;
+    padding: 5px 10px;
+    line-height: 20px;
+    border: 1px solid #bfbfbf;
+    background: #fff;
+    margin-top: 20px;
+    resize: none;
+}
+button {
+    display: block;
+    width: 90px;
+    height: 30px;
+    line-height: 30px;
+    margin-right: 60px;
+    text-align: center;
+    color: #fff;
+    background: #008842;
+    float: right;
+    border: none;
+}
+.linkform input:focus {
+    outline:none;
+}
+.linkform textarea:focus {
+    outline:none;
+}
+.position {
+    position: relative;
+    top: -195px;
+}
+#Masked {
+    width: 100%;
+    height: 900px;
+    display: none;
+    position: fixed;
+    z-index: 9;
+    background: grey;
+    opacity: .4;
+    margin: -35px 0 0 -10px;
+}
+.tittle {
+    display: none;
+    position: fixed;
+    z-index: 10;
+    margin: 200px 500px ;
+    width: 418px;
+    height: 197px;
+    background: #fff;
+    border: 1px solid #008742;
+}
+.p1 {
+    position: relative;
+    height: 16px;
+    padding: 7px 0;
+    font-size: 14px;
+    text-align: center;
+    color: #fff;
+    background: #008742;
+}
+.tittle i {
+    display: inline-block;
+    width: 13px;
+    height: 16px;
+    margin-right: 10px;
+    background: url(imgs/icon.png) no-repeat -62px -39px;
+}
+.con {
+    padding: 25px 30px;
+    line-height: 22px;
+    font-size: 12px;
+}
+.p2 {
+    text-align: center;
+    font-size: 14px;
+    padding-top: 15px;
+}
+.btnbox {
+    text-align: center;
+    margin-top: 45px;
+}
+.confirm {
+    color: #fff;
+    background: #008742;
+    display: inline-block;
+    width: 90px;
+    height: 30px;
+    margin: 0 20px;
+    line-height: 30px;
+    text-align: center;
+    border: 1px solid #6ab930;
 }
