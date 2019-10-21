@@ -1,0 +1,38 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body {
+    background: #f7f8f8;
+    font-size: 12px;
+    color: #444;
+    font-family: Arial,Verdana,"\5b8b\4f53";
+}
+._box {
+    width: 1200px;
+    margin: 0 auto;
+}
+._nav {
+    margin: 10px 0;
+    margin-left: -10px;
+}
+._nav a {
+    color: #444;
+    text-decoration: none;
+    outline: none;
+    margin: 0 10px;
+}
+._content h1 {
+    margin-left: 30%;
+    font-size: 12px;
+}
+._content a {
+    color: blue;
+}
+._center img {
+    width: 125px;
+    height: 125px;
+}
+._center {
+    text-align: center;
+}

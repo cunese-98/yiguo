@@ -7,6 +7,7 @@ body {
     font-size: 12px;
     background: #f7f8f8;
     font-family: Arial,Verdana,"\5b8b\4f53";
+    height: 2000px;
 }
 ._wrap {
     width: 1200px;
@@ -151,6 +152,13 @@ body {
     border-bottom: 0;
     background: #fff;
 }
+._fixed {
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    margin-top: 10px;
+    width: 240px;
+}
 ._guide a {
     display: block;
     height: 24px;
@@ -166,14 +174,28 @@ body {
     width: 24px;
     height: 24px;
     margin-right: 25px;
+    transition: all .3s ease-in;
     background: url("http://static01.yiguo.com/article/images/recipe/recipe_guide.png") no-repeat;
 }
+
+
+
+
 ._guide ._icon1 {
     background-position: 0 0;
+    margin-right: 45px;
+    background-position: -26px 0;
 }
+._scroll {
+    background: url("http://static01.yiguo.com/article/images/recipe/recipe_guide.png") no-repeat 0 -94px;
+}
+
+
+
+
+
 ._guide a:hover ._icon1 {
     margin-right: 45px;
-    transition: all .3s ease-in;
     background-position: -26px 0;
 }
 ._guide ._icon2 {
@@ -181,7 +203,6 @@ body {
 }
 ._guide a:hover ._icon2 {
     margin-right: 45px;
-    transition: all .3s ease-in;
     background-position: -26px -24px;
 }
 ._guide ._icon3 {
@@ -189,7 +210,6 @@ body {
 }
 ._guide a:hover ._icon3 {
     margin-right: 45px;
-    transition: all .3s ease-in;
     background-position: -26px -48px;
 }
 ._guide ._icon4 {
@@ -197,13 +217,9 @@ body {
 }
 ._guide a:hover ._icon4 {
     margin-right: 45px;
-    transition: all .3s ease-in;
     background-position: -26px -72px;
 }
 ._guide a:hover {
-    background: url("http://static01.yiguo.com/article/images/recipe/recipe_guide.png") no-repeat 0 -94px;;
-}
-._container {
-    overflow: hidden;
+    background: url("http://static01.yiguo.com/article/images/recipe/recipe_guide.png") no-repeat 0 -94px;
 }
 

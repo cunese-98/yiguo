@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdn.bootcss.com/jquery/1.10.2/jquery.min.js"></script>
     <link rel="stylesheet" href="../css/menu.css">
     <title>Document</title>
 </head>
@@ -93,7 +94,7 @@
                 <div class="_aside">
                     <div class="_none"></div>
                     <div class="_guide">
-                        <a href="#f-intro">
+                        <a href="#f-intro" class="_scroll">
                             <i class="_icon1"></i>
                             食谱简介
                         </a>
@@ -115,5 +116,19 @@
             </div>
         </div>
     </div>
+    <script>
+    $(function() {
+        var Top=$("._guide").offset().top
+        $(document).scroll(function() {
+            if($(document).scrollTop()>=Top) {
+                $("._guide ._icon2").css("margin-right","45px")
+                $("._guide ._icon1").css("margin-right","")
+            }else{
+                $("._guide").removeClass("_fixed");
+            }
+        })
+
+    })
+    </script>
 </body>
 </html>
