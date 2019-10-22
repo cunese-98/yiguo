@@ -4,9 +4,272 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
     <title>Document</title>
 </head>
 <style>
+* {
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    color: #444;
+}
+li {
+    list-style: none;
+}
+body {
+    background: #f7f8f8;
+    font-size: "Microsoft YaHei";
+}
+.navigate-right {
+    width: 500px;
+}
+.navigate-con {
+    display: none;
+}
+.one {
+    display: block;
+    height: 500px;
+    width: 179px;
+    background: rgba(255, 255, 255, 0.9);
+}
+.two {
+    display: none;
+    position: absolute;
+    top: 0px;
+    left: 179px;
+    height: 500px;
+    width: 265px;
+    border: 1px solid #bbb;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 17px 20px;
+    box-sizing: border-box;
+}
+.show {
+    display: block;
+}
+.navigate {
+    width: 178px;
+    position: absolute;
+    top: 0px;
+}
+.classify {
+    display: inline-block;
+    background: #008842;
+    width: 180px;
+    height: 38px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #fff;
+    line-height: 38px;
+    text-align: center;
+}
+.three {
+    width: 163px;
+    height: 22px;
+    background: rgba(255, 255, 255, 0.9);
+    border-bottom: 1px solid rgba(255, 255, 255, 0);
+    border-top: 1px solid rgba(255, 255, 255, 0);
+    border-left: 1px solid rgba(255, 255, 255, 0);
+    padding: 9px 0 9px 15px;
+    line-height: 22px;
+}
+.three a {
+    display: inline-block;
+    font: 14px normal;
+    margin-left: 15px;
+}
+.icon {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-bottom: -5px;
+}
+.icon-one {
+    background: url("./images/nav-icon.png") no-repeat 0px 0px;
+}
+.icon-two {
+    background: url("./images/nav-icon.png") no-repeat -25px 0px;
+}
+.icon-three {
+    background: url("./images/nav-icon.png") no-repeat -47px 0px;
+}
+.icon-five {
+    background: url("./images/nav-icon.png") no-repeat 0px 0px;
+}
+.icon-six {
+    background: url("./images/nav-icon.png") no-repeat -96px 0px;
+}
+.icon-sev {
+    background: url("./images/nav-icon.png") no-repeat -119px 0px;
+}
+.icon-eig {
+    background: url("./images/nav-icon.png") no-repeat -145px 0px;
+}
+.icon-nin {
+    background: url("./images/nav-icon.png") no-repeat -169px 0px;
+}
+.icon-ten {
+    background: url("./images/nav-icon.png") no-repeat -192px 0px;
+}
+.icon-ele {
+    background: url("./images/nav-icon.png") no-repeat -217px 0px;
+}
+.icon-thi {
+    background: url("./images/nav-icon.png") no-repeat -243px 0px;
+}
+.icon-four {
+    background: url("./images/nav-icon.png") no-repeat -73px 0px;
+}
+.content {
+    width: 1200px;
+    margin: auto;
+}
+.three:hover {
+    background: #fff;
+    border-right: none;
+    border-bottom: 1px solid #bbb;
+    border-top: 1px solid #bbb;
+    border-left: 1px solid #bbb;
+    border-right: 1px solid #fff;
+}
+.three .navigate-a:after {
+    content: '>';
+    position: absolute;
+    opacity: 0;
+    right: 25px;
+    font-size: 15px;
+}
+.three:hover .navigate-a {
+    color: #008842;
+    margin-left: 10px;
+    transition: 0.5s;
+}
+.three:hover .icon {
+    margin-left: 10px;
+    transition: 0.5s;
+}
+.three:hover .navigate-a:after {
+    opacity: 1;
+}
+.border-right {
+    border-right: 1px solid #bbb;
+}
+.three:hover .two {
+    display: block;
+}
+.two>a {
+    color: #008842;
+    text-decoration: underline;
+    font-size: 18px;
+}
+.two-one a {
+    margin-right: 30px;
+    color: #686868;
+    font-size: 12px;
+}
+.two-one a:hover {
+    color: #008842;
+}
+img {
+    border: none;
+}
+.two img {
+    position: absolute;
+    bottom: 0;
+}
+.j-wrap16 {
+    width: 1200px;
+    margin: 0 auto;
+    font-size: 12px;
+    font-family: Arial,Verdana,"\5b8b\4f53";
+    overflow: hidden;
+}
+.nav-items16 {
+    margin-left: 180px;
+    overflow: hidden;
+    width: 1020px;
+    height: 37px;
+    line-height: 37px;
+    border-bottom: 1px solid #008842;
+}
+.nav-items16 ul li {
+    float: left;
+    width: 115px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    list-style: none;
+}
+.nav-items16 a {
+    color: #444;
+    text-decoration: none;
+    outline: none;
+}
+
+.Acrumbs-6 {
+    font-size: 12px;
+    height: 14px;
+    font-family: Arial,Verdana,"\5b8b\4f53","宋体";
+    margin: 10px 0;
+    width: 1200px;
+    color: #444;
+    margin-left: -10px;
+}
+.Acrumbs-6>a {
+    margin: 0 10px;
+    display: inline-block;
+    text-decoration: none;
+    color: #444;
+}
+.Acrumbs-6 :nth-child(3) {
+    text-decoration: underline;
+    color: #e8380d;
+}
+.Awrap-6 {
+    width: 1200px;
+    margin: auto;
+}
+.Acrumbs1-6 {
+    background: #fff;
+    width: 195px;
+    margin-bottom: 20px;
+    padding: 15px;
+    height: 572px;
+    padding-bottom: 25px;
+    box-sizing: border-box;
+    display: inline-block;
+    border: 1px solid #eff1ed;
+}
+.Acrumbs1-6 a {
+    text-decoration: none;
+    font-size: 12px;
+    color: #666;
+}
+.Acrumbs1-6 li {
+    list-style: none;
+    height: 30px;
+    line-height: 30px;
+}
+.Acrumbs1-6 dt {
+    font-weight: bold;
+    font-size: 14px;
+    color: #333;
+    line-height: 30px;
+    margin-top: 10px;
+}
+.Acrumbs1-6 img{
+    display: inline-block;
+    width: 20px;
+    height: 19px;
+    margin-left: 10px;
+}
+.Acrumb-a-6:hover{
+    color: #008842;
+}
+
 .j-myyb {
     width: 942px;
     padding: 20px;
@@ -15,8 +278,11 @@
 }
 .j-main {
     position: relative;
+    left: 387px;
+    top: -592px;
     float: left;
     margin-left: 20px;
+    z-index: -1;
 }
 .j-main .j-title {
     position: relative;
@@ -152,122 +418,592 @@
     border: 1px solid #ccc;
     outline: none;
 }
+.footer18_list {
+    width: 1200px;
+    margin: 50px auto 0;
+    padding-top: 50px;
+    border-top: 1px solid #e0e0e0;
+    overflow: hidden;
+}
+.footer18 {
+    margin-top: -240px;
+    padding-bottom: 20px;
+    color: #575556;
+    font-size: 12px;
+}
+.footer18 dl {
+    margin-left: 50px;
+    display: inline;
+}
+.footer18 dl {
+    float: left;
+    width: 190px;
+    height: 190px;
+}
+.footer18 dl dt {
+    height: 23px;
+    line-height: 23px;
+    font-size: 14px;
+    text-indent: 40px;
+}
+.col181 dt {
+    background: url("./images/footer_icon.png") no-repeat 0 0;
+}
+.col182 dt {
+    background: url("./images/footer_icon.png") no-repeat  0 -23px;
+}
+.col183 dt {
+    background: url("./images/footer_icon.png") no-repeat  0 -46px;
+}
+.col184 dt {
+    background: url("./images/footer_icon.png") no-repeat 0 -69px;
+}
+.col185 dt {
+    background: url("./images/footer_icon.png") no-repeat 0 -92px;
+}
+.footer18 dd {
+    border-left: 1px dashed #A8A8A8;
+    padding-left: 20px;
+    height: 110px;
+    min-height: 110px;
+    margin: 15px 0 0 13px;
+}
+.footer18  a {
+    color: #575556;
+    line-height: 22px;
+    text-decoration: none;
+    outline: none;
+}
+.b-footer18 {
+    clear: both;
+    text-align: center;
+    padding: 40px 0 20px;
+    color: #008842;
+    font-size: 14px;
+}
+.last-footer18 {
+    clear: both;
+    color: #717171;
+    text-align: center;
+    line-height: 22px;
+    font-size: 12px;
+}
+.last-footer18 a {
+    color: #717171;
+    text-decoration: none;
+    outline: none;
+}
+.tail a {
+    display: inline-block;
+    position: relative;
+    margin: 0 10px;
+    zoom: 1;
+    vertical-align: middle;
+}
+.tail span {
+    height: 20px;
+    line-height: 20px;
+    margin: 0px 0px 0px 5px;
+    color: #939393;
+}
+.tail img {
+    height: 47px;
+}
+.tail a:last-child {
+    overflow: hidden;
+}
+.tail a:last-child img {
+    height: 20px;
+    float: left;
+}
+.tail a:last-child span {
+    float: left;
+}
+.footer18_list a:hover {
+    color: #008842;
+    text-decoration: underline;
+}
 </style>
 <body>
-    <div class="j-main j-myyb">
-        <div class="j-title">我的悠币</div>
-        <div class="j-yb">
-            当前可用悠币：
-            <b>160.00</b> 
-            个
-            <a class="btn-A1" href="javascript:void(0)" target="_blank">兑换商品</a>
-            <a class="btn-A2" href="javascript:void(0)" target="_blank">如何获取悠币</a>
-        </div>
-        <div class="j-subtitle clearfix">
-            <b>获取明细</b>
-            <div class="j-select">
-                <div id="j-selspan">
-                    <select >
-                        <option value="0">近一个月记录</option>
-                        <option value="1">三个月内记录</option>
-                        <option value="2">全部记录</option>
-                    </select>
-                </div>
-                <div id="j-selstate">
-                    <select >
-                        <option value="0">全部</option>
-                        <option value="1">支出悠币</option>
-                        <option value="2">获取悠币</option>
-                    </select>
+    <div class="container21">
+         <div class="j-wrap16">
+            <div class="content">
+                <div class="navigate">
+                    <a href="javascript:void(0)" class="classify">全部商品分类▼</a>
+                    <div class="navigate-con">
+                        <div class="one">
+                            <div class="three">
+                                <i class="icon-one icon"></i>
+                                <a href="detail.html" class="navigate-a">进口水果</a>
+                                <div class="two">
+                                    <a href="">进口水果</a>
+                                    <div class="two-one">
+                                        <a href="detail.html">奇异果</a>
+                                        <a href="detail.html">车厘子</a>
+                                        <a href="detail.html">李</a>
+                                        <a href="detail.html">莓</a>
+                                        <a href="detail.html">牛油果</a>
+                                        <a href="detail.html">提子</a>
+                                        <a href="detail.html">苹果</a>
+                                        <a href="detail.html">梨</a>
+                                        <a href="detail.html">柑桔橙柚</a>
+                                        <a href="detail.html">火龙果</a>
+                                        <a href="detail.html">椰子</a>
+                                        <a href="detail.html">芒果</a>
+                                        <a href="detail.html">凤梨</a>
+                                        <a href="detail.html">榴莲</a>
+                                        <a href="detail.html">热带水果</a>
+                                        <a href="detail.html">时令水果</a>
+                                        <a href="detail.html">原箱水果</a>
+                                    </div>
+                                    <div>
+                                        <a href="detail.html">
+                                            <img src="http://img05.yiguoimg.com/e/others/150929/9570160763248445.png" alt=""/>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="three">
+                                <i class="icon-two icon"></i>
+                                <a href="detail.html" class="navigate-a">国产水果</a>
+                                <div class="two">
+                                    <a href="">国产水果</a>
+                                    <div class="two-one">
+                                        <a href="detail.html">苹果</a>
+                                        <a href="detail.html">梨</a>
+                                        <a href="detail.html">柑桔橙柚</a>
+                                        <a href="detail.html">猕猴桃</a>
+                                        <a href="detail.html">瓜</a>
+                                        <a href="detail.html">葡萄</a>
+                                        <a href="detail.html">桃</a>
+                                        <a href="detail.html">梨</a>
+                                        <a href="detail.html">枣</a>
+                                        <a href="detail.html">梅</a>
+                                        <a href="detail.html">芒果</a>
+                                        <a href="detail.html">凤梨</a>
+                                        <a href="detail.html">榴莲</a>
+                                        <a href="detail.html">热带水果</a>
+                                        <a href="detail.html">时令水果</a>
+                                        <a href="detail.html">原箱水果</a>
+                                    </div>
+                                    <div>
+                                        <a href="detail.html">
+                                            <img src="http://img05.yiguoimg.com/e/others/150929/9570160763379517.png" alt=""/>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="three">
+                                <i class="icon-three icon"></i>
+                                <a href="detail.html" class="navigate-a">精选肉类</a>
+                                <div class="two">
+                                    <a href="detail.html">精选肉类</a>
+                                    <div class="two-one">
+                                        <a href="detail.html">牛排</a>
+                                        <a href="detail.html">进口牛肉</a>
+                                        <a href="detail.html">国产牛肉</a>
+                                        <a href="detail.html">猪肉</a>
+                                        <a href="detail.html">羊肉</a>
+                                        <a href="detail.html">肉制品</a>
+                                    </div>
+                                    <div>
+                                        <a href="detail.html">
+                                            <img src="http://img05.yiguoimg.com/e/others/150929/9570160763445053.png" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="three">
+                                <i class="icon-four icon"></i>
+                                <a href="detail.html" class="navigate-a">禽类蛋品</a>
+                                <div class="two">
+                                    <a href="detail.html">禽类蛋品</a>
+                                    <div class="two-one">
+                                        <a href="detail.html">鸡</a>
+                                        <a href="detail.html">鸭</a>
+                                        <a href="detail.html">鹅/鸽/特色禽类/蛋</a>
+                                    </div>
+                                    <div>
+                                        <img src="http://img05.yiguoimg.com/e/others/150929/9570160763510589.png" alt=""/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="three">
+                                <i class="icon-six icon"></i>
+                                <a href="detail.html" class="navigate-a">海鲜水产</a>
+                                <div class="two">
+                                    <a href="detail.html">海鲜水产</a>
+                                    <div class="two-one">
+                                        <a href="detail.html">鳕鱼</a>
+                                        <a href="detail.html">虾仁</a>
+                                        <a href="detail.html">大闸蟹卷</a>
+                                        <a href="detail.html">鱼</a>
+                                        <a href="detail.html">三文鱼</a>
+                                        <a href="detail.html">虾</a>
+                                        <a href="detail.html">蟹</a>
+                                        <a href="detail.html">贝</a>
+                                        <a href="detail.html">鲜活</a>
+                                        <a href="detail.html">海参</a>
+                                        <a href="detail.html">加工水产</a>
+                                    </div>
+                                    <div>
+                                        <a href="detail.html">
+                                            <img src="http://img05.yiguoimg.com/e/others/150929/9570160763576125.png" alt=""/>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="three">
+                                <i class="icon-sev icon"></i>
+                                <a href="detail.html" class="navigate-a">乳品糕点</a>
+                                <div class="two">
+                                    <a href="detail.html">乳品糕点</a>
+                                    <div class="two-one">
+                                        <a href="detail.html">奶酪</a>
+                                        <a href="detail.html">黄油/奶油</a>
+                                        <a href="detail.html">乳品</a>
+                                        <a href="detail.html">面包</a>
+                                        <a href="detail.html">蛋糕</a>
+                                        <a href="detail.html">甜点</a>
+                                    </div>
+                                    <div>
+                                        <a href="detail.html">
+                                            <img src="http://img05.yiguoimg.com/e/others/150929/9570160763641661.png" alt=""/>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="three">
+                                <i class="icon-nin icon"></i>
+                                <a href="detail.html" class="navigate-a">方便速食</a>
+                                <div class="two">
+                                    <a href="detail.html">方便速食</a>
+                                    <div class="two-one">
+                                        <a href="detail.html">冷冻点心</a>
+                                        <a href="detail.html">中式主食</a>
+                                        <a href="detail.html">火锅料</a>
+                                        <a href="detail.html">半成品菜</a>
+                                    </div>
+                                    <div>
+                                        <a href="detail.html">
+                                            <img src="http://img05.yiguoimg.com/e/others/150929/9570160763838269.png" alt=""/>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="three">
+                                <i class="icon-ten icon"></i>
+                                <a href="detail.html" class="navigate-a">粮油杂货</a>
+                                <div class="two">
+                                    <a href="detail.html">粮油杂货</a>
+                                    <div class="two-one">
+                                        <a href="detail.html">米</a>
+                                        <a href="detail.html">杂粮</a>
+                                        <a href="detail.html">面/面制品</a>
+                                        <a href="detail.html">油</a>
+                                        <a href="detail.html">调味料</a>
+                                        <a href="detail.html">干货</a>
+                                        <a href="detail.html">果干/零食</a>
+                                    </div>
+                                    <div>
+                                        <a href="detail.html">
+                                            <img src="http://img05.yiguoimg.com/e/others/150929/9570160757940029.png" alt=""/>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="three">
+                                <i class="icon-ele icon"></i>
+                                <a href="detail.html" class="navigate-a">食品饮料</a>
+                                <div class="two">
+                                    <a href="detail.html">食品饮料</a>
+                                    <div class="two-one">
+                                        <a href="detail.html">水</a>
+                                        <a href="detail.html">冲调饮品</a>
+                                        <a href="detail.html">葡萄酒/酒具</a>
+                                        <a href="detail.html">休闲食品</a>
+                                        <a href="detail.html">啤酒</a>
+                                    </div>
+                                    <div>
+                                        <a href="detail.html">
+                                            <img src="" alt=""/>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="myyg-table">
-            <table>
-                <thead>
-                    <tr>
-                        <td width="10%">序号</td>
-                        <td width="25%">日期</td>
-                        <td width="15%">收支</td>
-                        <td width="15%">来源</td>
-                        <td width="20%">详情</td>
-                        <td width="15%">账户悠币余额</td>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>2019-10-16 08:55:18</td>
-                        <td>+10.00个</td>
-                        <td>登录送悠币</td>
-                        <td></td>
-                        <td>170.00</td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>2019-10-15 18:33:24</td>
-                        <td>+10.00个</td>
-                        <td>登录送悠币</td>
-                        <td></td>
-                        <td>160.00</td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>2019-10-14 13:52:08</td>
-                        <td>+10.00个</td>
-                        <td>登录送悠币</td>
-                        <td></td>
-                        <td>150.00</td>
-                    </tr>
-                    <tr>
-                        <td>4</td>
-                        <td>2019-10-13 12:15:28</td>
-                        <td>+10.00个</td>
-                        <td>登录送悠币</td>
-                        <td></td>
-                        <td>140.00</td>
-                    </tr>
-                    <tr>
-                        <td>5</td>
-                        <td>2019-10-09 15:50:31</td>
-                        <td>+10.00个</td>
-                        <td>登录送悠币</td>
-                        <td></td>
-                        <td>130.00</td>
-                    </tr>
-                    <tr>
-                        <td>6</td>
-                        <td>2019-09-29 17:21:54</td>
-                        <td>+10.00个</td>
-                        <td>登录送悠币</td>
-                        <td></td>
-                        <td>120.00</td>
-                    </tr>
-                    <tr>
-                        <td>7</td>
-                        <td>2019-09-23 10:03:03</td>
-                        <td>+10.00个</td>
-                        <td>登录送悠币</td>
-                        <td></td>
-                        <td>110.00</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-        <div class="j-paging">
-            <div class="paging-num">
-                <a href="javascript:void(0)" >上一页</a>
-                <a href="javascript:void(0)" >1</a>
-                <a href="javascript:void(0)" >下一页</a>
+            <div class="nav-items16">
+                <ul>
+                    <li>
+                        <a href="detail.html" target="_blank">新品专区</a>
+                    </li>
+                    <li>
+                        <a href="detail.html" target="_blank">新品专区</a>
+                    </li>
+                    <li>
+                        <a href="detail.html" target="_blank">优质生活</a>
+                    </li>
+                    <li>
+                        <a href="detail.html" target="_blank">优质生活</a>
+                    </li>
+                    <li>
+                        <a href="detail.html" target="_blank">银行专区</a>
+                    </li>
+                    <li>
+                        <a href="detail.html" target="_blank">菜谱专栏</a>
+                    </li>
+                </ul>
             </div>
-            <div class="paging-total">共 1页</div>
-            <div class="paging-form">
-                <span>到第</span>
-                <input type="text" value="1">
-                <span>页</span>
-                <button>确定</button>
+        </div>
+        <div class="Awrap-6">
+            <div class="Acrumbs-6">
+                <a href="">首页</a>>
+                <a href="">我的易果</a>>
+                <a href="">我的悠币</a>
+            </div>
+            <div class="Acrumbs1-6">
+                <ul>
+                    <dt style="margin-top: 2px;">交易信息</dt>
+                    <li>
+                        <a class="Acrumb-a-6" href="">我的订单</a>
+                    </li>
+                    <li>
+                        <a class="Acrumb-a-6" href="">我的优惠劵</a>
+                    </li>
+                    <li>
+                        <a class="Acrumb-a-6" href="" style="color: #008842;">我的悠币</a>
+                    </li>
+                    <li>
+                        <a class="Acrumb-a-6" href="">我的礼品兑换券</a>
+                    </li>
+                    <li>
+                        <a class="Acrumb-a-6" href="">购买过的商品</a>
+                    </li>
+                    <li>
+                        <a class="Acrumb-a-6" href="">我的收藏</a>
+                    </li>
+                    <li>
+                        <a class="Acrumb-a-6" href="">评论商品</a>
+                    </li>
+                    <dt>账号信息</dt>
+                    <li>
+                        <a class="Acrumb-a-6" href="">卡包余额</a>
+                    </li>
+                    <li>
+                        <a class="Acrumb-a-6" href="">个人资料</a>
+                        <img src="http://static01.yiguo.com/utaste/images/icon-gift.png" alt="">
+                    </li>
+                    <li>
+                        <a class="Acrumb-a-6" href="">账号安全</a>
+                    </li>
+                    <li>
+                        <a class="Acrumb-a-6" href="">收货地址管理</a>
+                    </li>
+                    <li>
+                        <a class="Acrumb-a-6" href="">企业福利入口</a>
+                    </li>
+                    <dt>售后服务</dt>
+                    <li>
+                        <a class="Acrumb-a-6" href="">在线退换货</a>
+                    </li>
+                    <li>
+                        <a class="Acrumb-a-6" href="">投诉建议</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="j-main j-myyb">
+            <div class="j-title">我的悠币</div>
+            <div class="j-yb">
+                当前可用悠币：
+                <b>160.00</b> 
+                个
+                <a class="btn-A1" href="change.html" target="_blank">兑换商品</a>
+                <a class="btn-A2" href="qualification4.html" target="_blank">如何获取悠币</a>
+            </div>
+            <div class="j-subtitle clearfix">
+                <b>获取明细</b>
+                <div class="j-select">
+                    <div id="j-selspan">
+                        <select >
+                            <option value="0">近一个月记录</option>
+                            <option value="1">三个月内记录</option>
+                            <option value="2">全部记录</option>
+                        </select>
+                    </div>
+                    <div id="j-selstate">
+                        <select >
+                            <option value="0">全部</option>
+                            <option value="1">支出悠币</option>
+                            <option value="2">获取悠币</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="myyg-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <td width="10%">序号</td>
+                            <td width="25%">日期</td>
+                            <td width="15%">收支</td>
+                            <td width="15%">来源</td>
+                            <td width="20%">详情</td>
+                            <td width="15%">账户悠币余额</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>2019-10-16 08:55:18</td>
+                            <td>+10.00个</td>
+                            <td>登录送悠币</td>
+                            <td></td>
+                            <td>170.00</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>2019-10-15 18:33:24</td>
+                            <td>+10.00个</td>
+                            <td>登录送悠币</td>
+                            <td></td>
+                            <td>160.00</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>2019-10-14 13:52:08</td>
+                            <td>+10.00个</td>
+                            <td>登录送悠币</td>
+                            <td></td>
+                            <td>150.00</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>2019-10-13 12:15:28</td>
+                            <td>+10.00个</td>
+                            <td>登录送悠币</td>
+                            <td></td>
+                            <td>140.00</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>2019-10-09 15:50:31</td>
+                            <td>+10.00个</td>
+                            <td>登录送悠币</td>
+                            <td></td>
+                            <td>130.00</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>2019-09-29 17:21:54</td>
+                            <td>+10.00个</td>
+                            <td>登录送悠币</td>
+                            <td></td>
+                            <td>120.00</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>2019-09-23 10:03:03</td>
+                            <td>+10.00个</td>
+                            <td>登录送悠币</td>
+                            <td></td>
+                            <td>110.00</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="j-paging">
+                <div class="paging-num">
+                    <a href="javascript:void(0)" >上一页</a>
+                    <a href="javascript:void(0)" >1</a>
+                    <a href="javascript:void(0)" >下一页</a>
+                </div>
+                <div class="paging-total">共 1页</div>
+                <div class="paging-form">
+                    <span>到第</span>
+                    <input type="text" value="1">
+                    <span>页</span>
+                    <button>确定</button>
+                </div>
             </div>
         </div>
     </div>
+    <div class="footer18">
+        <div class="footer18_list">
+            <dl class="col181">
+                <dt>新手指南</dt>
+                <dd>
+                    <p><a href="qualification1.html">账户注册</a></p>
+                    <p><a href="qualification2.html">购物流程</a></p>
+                    <p><a href="qualification3.html">订购方式</a></p>
+                    <p><a href="qualification4.html">悠币说明</a></p>
+                    <p><a href="qualification5.html">会员等级</a><img src="http://img06.yiguoimg.com/e/web/170315/00941/154425/icon-new.png" alt=""></p>
+                </dd>
+            </dl>
+            <dl class="col182">
+                <dt>付款方式</dt>
+                <dd>
+                    <p><a href="qualification7.html">支付方式</a>/<a href="qualification8.html">发票说明</a></p>
+                    <p><a href="qualification10.html">礼品卡章程</a></p>
+                    <p><a href="qualification11.html">优惠代码</a></p>
+                    <p><a href="qualification12.html">卡券购买章程</a></p>
+                </dd>
+            </dl>
+            <dl class="col183">
+                <dt>配送方式</dt>
+                <dd>
+                    <p><a href="qualification13.html">配送运费</a></p>
+                    <p><a href="qualification14.html">时间及范围</a></p>
+                </dd>
+            </dl>
+            <dl class="col184">
+                <dt>售后服务</dt>
+                <dd>
+                    <p><a href="qualification16.html">退换货政策</a></p>
+                    <p><a href="qualification17.html">退换货流程</a></p>
+                    <p><a href="qualification18.html">常见问题</a></p>
+                    <p><a href="qualification19.html">极速退款</a></p>
+                    <p><a href="">投诉与建议</a></p>
+                </dd>
+            </dl>
+            <dl class="col185">
+                <dt>关于我们</dt>
+                <dd>
+                    <p><a href="qualification20.html">公司介绍</a></p>
+                    <p><a href="qualification21.html">联系我们</a></p>
+                    <p><a href="qualification22.html">业务合作</a></p>
+                    <p><a href="qualification23.html">诚信举报</a></p>
+                    <p><a href="qualification24.html">用户协议</a></p>
+                    <p><a href="qualification25.html">隐私协议</a></p>
+                    <p> <a href="qualification26.html">友情链接</a></p>
+                </dd>
+            </dl>
+        </div>
+        <div class="b-footer18">
+            <span>客服热线 400-000-7788 企业采购或团购，请转2号键咨询</span>
+            <span>周一至周日 9:00-21:00</span>
+        </div>
+        <div class="last-footer18">
+            <p class="H-line">所有图片均受著作权保护，未经许可任何单位与个人不得使用、复制、转载、摘编，违者必究法律责任。</p>
+            <p class="H-line"><a href="detail.html">沪ICP备09008015号</a>  Copyright © 2005-2019 版权所有</p>
+            <p class="tail">
+                <a href="detail.html"><img src="http://img07.yiguoimg.com/d/web/171208/00652/173249/153685368061665897_121x29.png" alt=""/></a>
+                <a href="detail.html"><img src="http://img06.yiguoimg.com/d/web/181227/00281/143951/footer_copy.jpg" alt=""/></a>
+                <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31010502000002"><img src="http://www.beian.gov.cn/file/ghs.png" alt=""/><span>沪公网安备 31010502000002号</span></a>
+            </p>
+        </div>
+    </div>   
+    <script>
+        $(document).ready(function () {
+            $(".navigate").hover(function () {
+                $(".navigate-con").css("display","block")
+            },function() {
+                $(".navigate-con").css("display","none")
+            })
+        })
+    </script>
 </body>
 </html>
