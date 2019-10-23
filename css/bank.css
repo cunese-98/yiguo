@@ -1,0 +1,245 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.a-6 {
+    display: block;
+    width: 1583px;
+    height: 462px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image:url(http://img07.yiguoimg.com/d/others/171120/9288715383219060.jpg)
+}
+.topBox-6 {
+    font-family: "宋体";
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    height: 38px;
+}
+.top-6 {
+    list-style: none;
+    padding-left: 0;
+    width: 1200px;
+    height: 37px;
+    margin: auto;
+    border-bottom: 1px #008842 solid;
+}
+.top-6 li {
+    float: left;
+    width: 115px;
+    height: 37px;
+    line-height: 37px;
+    /* text-align: center; */
+}
+.top-6 a {
+    text-decoration: none;
+    color: #444;
+    font-size: 15px;
+}
+.liNum2-6:hover {
+    color: #008842;
+}
+.top-6>.liNum1-6 {
+    font-family: "微软雅黑";
+    width: 180px;
+    background: #008842;
+}
+.liNum1-6 a {
+    color: #fff;
+}
+/* 1 */
+.navigate-con a {
+    text-decoration: none;
+    color: #444;
+}
+
+body {
+    background: #f7f8f8;
+    font-size: "Microsoft YaHei";
+}
+.navigate-con {
+    position: absolute;
+    display: none;
+    z-index: 1000;
+}
+
+.one {
+    display: block;
+}
+
+.two {
+    display: none;
+    position: absolute;
+    top: 0px;
+    left: 179px;
+    height: 500px;
+    width: 265px;
+    border: 1px solid #bbb;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 17px 20px;
+    box-sizing: border-box;
+}
+
+.navigate {
+    width: 178px;
+    position: absolute;
+    top: 0px;
+}
+
+.classify {
+    display: inline-block;
+    background: #008842;
+    width: 180px;
+    height: 38px;
+    font: bold 15px/16px;
+    color: #fff;
+    line-height: 38px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.three {
+    width: 163px;
+    height: 22px;
+    background: rgba(255, 255, 255, 0.9);
+    border-bottom: 1px solid rgba(255, 255, 255, 0);
+    border-top: 1px solid rgba(255, 255, 255, 0);
+    border-left: 1px solid rgba(255, 255, 255, 0);
+    padding: 9px 0 9px 15px;
+    line-height: 22px;
+}
+
+.three a {
+    display: inline-block;
+    font: 14px normal;
+    margin-left: 15px;
+}
+
+.icon {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-bottom: -5px;
+
+}
+
+.icon-one {
+    background: url(img/nav-icon.png) no-repeat 0px 0px;
+}
+
+.icon-two {
+    background: url(img/nav-icon.png) no-repeat -25px 0px;
+}
+
+.icon-three {
+    background: url(img/nav-icon.png) no-repeat -47px 0px;
+}
+
+.icon-five {
+    background: url(img/nav-icon.png) no-repeat 0px 0px;
+}
+
+.icon-six {
+    background: url(img/nav-icon.png) no-repeat -96px 0px;
+}
+
+.icon-sev {
+    background: url(img/nav-icon.png) no-repeat -119px 0px;
+}
+
+.icon-eig {
+    background: url(img/nav-icon.png) no-repeat -145px 0px;
+}
+
+.icon-nin {
+    background: url(img/nav-icon.png) no-repeat -169px 0px;
+}
+
+.icon-ten {
+    background: url(img/nav-icon.png) no-repeat -192px 0px;
+}
+
+.icon-ele {
+    background: url(img/nav-icon.png) no-repeat -217px 0px;
+}
+
+.icon-thi {
+    background: url(img/nav-icon.png) no-repeat -243px 0px;
+}
+
+.icon-four {
+    background: url(img/nav-icon.png) no-repeat -73px 0px;
+}
+
+.content {
+    width: 1200px;
+    margin: auto;
+    display: none;
+}
+
+.three:hover {
+    background: #fff;
+    border-right: none;
+    border-bottom: 1px solid #bbb;
+    border-top: 1px solid #bbb;
+    border-left: 1px solid #bbb;
+    border-right: 1px solid #fff;
+
+}
+
+.three .navigate-a:after {
+    content: '>';
+    position: absolute;
+    opacity: 0;
+    right: 25px;
+    font-size: 15px;
+}
+
+.three:hover .navigate-a {
+    color: #008842;
+    margin-left: 10px;
+    transition: 0.5s;
+ 
+}
+
+.three:hover .icon {
+    margin-left: 10px;
+    transition: 0.5s;
+}
+
+.three:hover .navigate-a:after {
+    opacity: 1;
+
+}
+
+.three:hover .two {
+    display: block;
+}
+
+.two>a {
+    color: #008842;
+    text-decoration: underline;
+    font-size: 18px;
+}
+
+.two-one a {
+    margin-right: 30px;
+    color: #686868;
+    font-size: 12px;
+}
+
+.two-one a:hover {
+    color: #008842;
+}
+
+img {
+    border: none;
+}
+
+.two img {
+    position: absolute;
+    bottom: 0;
+
+}
