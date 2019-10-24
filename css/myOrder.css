@@ -1,0 +1,439 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: #f7f8f8;
+}
+img {
+    border: 0;
+}
+.f2menu {
+    width: 1200px;
+    font-size: 15px;
+    margin: auto;
+    border-bottom: 3px solid #008842;
+}
+a {
+    text-decoration: none;
+    color: #444;
+}
+li {
+    list-style: none;
+}
+.f32navigate-con {
+    display: none;
+}
+.f32one {
+    display: block;
+    height: 500px;
+    width: 179px;
+    background: rgba(255, 255, 255, 0.9);
+}
+.f32two {
+    display: none;
+    position: absolute;
+    top: 0px;
+    left: 179px;
+    height: 500px;
+    width: 265px;
+    border: 1px solid #bbb;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 17px 20px;
+    box-sizing: border-box;
+}
+.f32show {
+    display: block;
+}
+.f32navigate {
+    width: 178px;
+    position: absolute;
+    top: 108px;
+}
+.f32classify {
+    display: inline-block;
+    background: #008842;
+    width: 180px;
+    height: 38px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #fff;
+    line-height: 38px;
+    text-align: center;
+}
+.f32three {
+    width: 180px;
+    height: 48px;
+    background: rgba(255, 255, 255, 0.9);
+    border-bottom: 1px solid rgba(255, 255, 255, 0);
+    border-top: 1px solid rgba(255, 255, 255, 0);
+    border-left: 1px solid rgba(255, 255, 255, 0);
+    padding: 9px 0 9px 15px;
+    line-height: 22px;
+}
+.f32three a {
+    display: inline-block;
+    font: 14px normal;
+    margin-left: 15px;
+}
+.icon {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-bottom: -5px;
+}
+.f32icon-one {
+    background: url("../img/nav-icon.png") no-repeat 0px 0px;
+}
+.f32icon-two {
+    background: url("../img/nav-icon.png") no-repeat -25px 0px;
+}
+.f32icon-three {
+    background: url("../img/nav-icon.png") no-repeat -47px 0px;
+}
+.f32icon-five {
+    background: url("../img/nav-icon.png") no-repeat 0px 0px;
+}
+.f32icon-six {
+    background: url("../img/nav-icon.png") no-repeat -96px 0px;
+}
+.f32icon-sev {
+    background: url("../img/nav-icon.png") no-repeat -119px 0px;
+}
+.f32icon-eig {
+    background: url("../img/nav-icon.png") no-repeat -145px 0px;
+}
+.f32icon-nin {
+    background: url("../img/nav-icon.png") no-repeat -169px 0px;
+}
+.f32icon-ten {
+    background: url("../img/nav-icon.png") no-repeat -192px 0px;
+}
+.f32icon-ele {
+    background: url("../img/nav-icon.png") no-repeat -217px 0px;
+}
+.f32icon-thi {
+    background: url("../img/nav-icon.png") no-repeat -243px 0px;
+}
+.f32icon-four {
+    background: url("../img/nav-icon.png") no-repeat -73px 0px;
+}
+.f32content {
+    width: 1200px;
+    margin: auto;
+}
+.f32three:hover {
+    background: #fff;
+    border-right: none;
+    border-bottom: 1px solid #bbb;
+    border-top: 1px solid #bbb;
+    border-left: 1px solid #bbb;
+    border-right: 1px solid #fff;
+}
+.f32three .f32navigate-a:after {
+    content: '>';
+    position: absolute;
+    opacity: 0;
+    right: 25px;
+    font-size: 15px;
+}
+.f32three:hover .f32navigate-a {
+    color: #008842;
+    margin-left: 10px;
+    transition: 0.5s;
+}
+.f32three:hover .f32icon {
+    margin-left: 10px;
+    transition: 0.5s;
+}
+.f32three:hover .f32navigate-a:after {
+    opacity: 1;
+}
+.f32border-right {
+    border-right: 1px solid #bbb;
+}
+.f32three:hover .f32two {
+    display: block;
+}
+.f32two>a {
+    color: #008842;
+    text-decoration: underline;
+    font-size: 18px;
+}
+.f32two-one a {
+    margin-right: 30px;
+    color: #686868;
+    font-size: 12px;
+}
+.f32two-one a:hover {
+    color: #008842;
+}
+img {
+    border: none;
+}
+.f32two img {
+    position: absolute;
+    bottom: 0;
+}
+.f32j-wrap16 {
+    width: 1200px;
+    margin: 0 auto;
+    font-size: 12px;
+    font-family: Arial,Verdana,"\5b8b\4f53";
+    overflow: hidden;
+}
+.f32nav-items16 {
+    margin-left: 180px;
+    overflow: hidden;
+    width: 1020px;
+    height: 37px;
+    line-height: 37px;
+    border-bottom: 1px solid #008842;
+}
+.f32nav-items16 ul li {
+    float: left;
+    width: 115px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    list-style: none;
+}
+.f32nav-items16 a {
+    color: #444;
+    text-decoration: none;
+    outline: none;
+}
+
+.f3container {
+    width: 1200px;
+    margin: auto;
+}
+.f3manage {
+    width: 1200px;
+    color: #444;
+    margin: 10px auto;
+    overflow: hidden;
+}
+.f3manage a,.f3manage span {
+    float: left;
+    margin: 0 5px 0;
+    font-size: 12px;
+    color: #444;
+    text-decoration: none;
+}
+.f3manage .f3text1 {
+    margin: 0 10px 0 0;
+}
+.f3manage .f3text3 {
+    color: #e8380d;
+    text-decoration: underline;
+}
+.f3test {
+    float: right;
+    width: 984px;
+    padding: 20px;
+    padding-bottom: 80px;
+    margin-left: 20px;
+    background: #fff;
+    border: 1px solid #e3e6e0;
+    overflow: hidden;
+}
+.f3test1 {
+    width: 100%;
+    font-size: 14px;
+    font-family: "宋体";
+    line-height: 17px;
+    color: #008842;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #008842;
+}
+#f3state,#f3date {
+    float: right;
+    margin-left: 15px;
+    outline: none;
+    border: 1px solid rgb(169, 169, 169);
+}
+.f3content {
+    margin-top: 13px;
+}
+.f3content1 {
+    width: 100%;
+    font-size: 12px;
+    font-family: "宋体";
+    margin-bottom: 10px;
+    border: 1px solid #ebebeb;
+    background: #f4f4f4;
+    overflow: hidden;
+}
+.f3box1 {
+    float: left;
+    width: 520px;
+    line-height: 40px;
+    margin: auto;
+    text-align: center;
+}
+.f3box2 {
+    float: left;
+    width: 140px;
+    line-height: 40px;
+    margin: auto;
+    text-align: center;
+}
+.f3content2 {
+    width: 942px;
+    font-size: 14px;
+    font-family: "宋体";
+    color: #444;
+    line-height: 70px;
+    text-align: center;
+}
+.f3content2 a {
+    color: #008842;
+}
+.f3boxAll {
+    overflow: hidden;
+}
+.f3list {
+    float: left;
+    width: 195px;
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: #fff;
+}
+.f3list dl {
+    margin: 0 0 10px;
+}
+.f3list1-1 {
+    list-style: none;
+    padding: 0;
+    margin: auto;
+}
+.f3list1-1 li a {
+    line-height: 30px;
+    font-size: 12px;
+    font-family: "宋体";
+    text-decoration: none;
+}
+.f3list1-1-1 {
+    color: #008842;
+}
+.f3list1-1-2 {
+    color: #444;
+}
+.f3list1-1-2:hover {
+    color: #008842;
+}
+.f3list0-1 {
+    margin: 0;
+}
+.f3list1 {
+    line-height: 30px;
+    font-size: 14px;
+    font-family: "宋体";
+    color: #333;
+    font-weight: bold;
+}
+
+.f32footer_service {
+    width: 100%;
+    border-top: 1px solid #e0e0e0;
+    margin-top: 50px;
+    padding: 30px 0;
+}
+.f32footer18_list {
+    width: 1200px;
+    margin: 50px auto 0;
+}
+.f32footer18 {
+    padding-bottom: 20px;
+    color: #575556;
+    font-size: 12px;
+}
+.f32footer18 dl {
+    margin-left: 50px;
+    display: inline;
+}
+.f32footer18 dl {
+    float: left;
+    width: 190px;
+}
+.f32footer18 dl dt {
+    line-height: 23px;
+    font-size: 14px;
+    text-indent: 40px;
+}
+.f32col181 dt {
+    background: url("../img/footer_icon.png") no-repeat 0 0;
+}
+.f32col182 dt {
+    background: url("../img/footer_icon.png") no-repeat  0 -23px;
+}
+.f32col183 dt {
+    background: url("../img/footer_icon.png") no-repeat  0 -46px;
+}
+.f32col184 dt {
+    background: url("../img/footer_icon.png") no-repeat 0 -69px;
+}
+.f32col185 dt {
+    background: url("../img/footer_icon.png") no-repeat 0 -92px;
+}
+.f32footer18 dd {
+    border-left: 1px dashed #A8A8A8;
+    padding-left: 20px;
+    min-height: 110px;
+    margin: 15px 0 0 13px;
+}
+.f32footer18  a {
+    color: #575556;
+    line-height: 22px;
+    text-decoration: none;
+    outline: none;
+}
+.f32b-footer18 {
+    clear: both;
+    text-align: center;
+    padding: 60px 0 20px;
+    color: #008842;
+    font-size: 14px;
+}
+.f32last-footer18 {
+    clear: both;
+    color: #717171;
+    text-align: center;
+    line-height: 22px;
+    font-size: 12px;
+}
+.f32last-footer18 a {
+    color: #717171;
+    text-decoration: none;
+    outline: none;
+}
+.f32tail a {
+    display: inline-block;
+    position: relative;
+    margin: 0 10px;
+    zoom: 1;
+    vertical-align: middle;
+}
+.f32tail span {
+    line-height: 20px;
+    margin: 0px 0px 0px 5px;
+    color: #939393;
+}
+.f32tail img {
+    height: 47px;
+}
+.f32tail a:last-child {
+    overflow: hidden;
+}
+.f32tail a:last-child img {
+    height: 20px;
+    float: left;
+}
+.f32tail a:last-child span {
+    float: left;
+}
+.f32footer18_list a:hover {
+    color: #008842;
+    text-decoration: underline;
+}
