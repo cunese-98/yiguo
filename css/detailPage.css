@@ -84,40 +84,40 @@ li {
     margin-bottom: -5px;
 }
 .icon-one {
-    background: url("../img/nav-icon.png") no-repeat 0px 0px;
+    background: url("../f07img/nav-icon.png") no-repeat 0px 0px;
 }
 .icon-two {
-    background: url("../img/nav-icon.png") no-repeat -25px 0px;
+    background: url("../f07img/nav-icon.png") no-repeat -25px 0px;
 }
 .icon-three {
-    background: url("../img/nav-icon.png") no-repeat -47px 0px;
+    background: url("../f07img/nav-icon.png") no-repeat -47px 0px;
 }
 .icon-five {
-    background: url("../img/nav-icon.png") no-repeat 0px 0px;
+    background: url("../f07img/nav-icon.png") no-repeat 0px 0px;
 }
 .icon-six {
-    background: url("../img/nav-icon.png") no-repeat -96px 0px;
+    background: url("../f07img/nav-icon.png") no-repeat -96px 0px;
 }
 .icon-sev {
-    background: url("../img/nav-icon.png") no-repeat -119px 0px;
+    background: url("../f07img/nav-icon.png") no-repeat -119px 0px;
 }
 .icon-eig {
-    background: url("../img/nav-icon.png") no-repeat -145px 0px;
+    background: url("../f07img/nav-icon.png") no-repeat -145px 0px;
 }
 .icon-nin {
-    background: url("../img/nav-icon.png") no-repeat -169px 0px;
+    background: url("../f07img/nav-icon.png") no-repeat -169px 0px;
 }
 .icon-ten {
-    background: url("../img/nav-icon.png") no-repeat -192px 0px;
+    background: url("../f07img/nav-icon.png") no-repeat -192px 0px;
 }
 .icon-ele {
-    background: url("../img/nav-icon.png") no-repeat -217px 0px;
+    background: url("../f07img/nav-icon.png") no-repeat -217px 0px;
 }
 .icon-thi {
-    background: url("../img/nav-icon.png") no-repeat -243px 0px;
+    background: url("../f07img/nav-icon.png") no-repeat -243px 0px;
 }
 .icon-four {
-    background: url("../img/nav-icon.png") no-repeat -73px 0px;
+    background: url("../f07img/nav-icon.png") no-repeat -73px 0px;
 }
 .content {
     width: 1200px;
@@ -385,7 +385,7 @@ img {
     width: 10px;
     height: 13px;
     margin: 0 0 0 3px;
-    background-image: url('../img/filter_icon.png');
+    background-image: url('../f07img/filter_icon.png');
     background-repeat: no-repeat;
     background-size: 50px;
     background-position: 0px 0px;
@@ -400,7 +400,7 @@ img {
     width: 10px;
     height: 13px;
     margin: 0 0 0 3px;
-    background-image: url('../img/filter_icon.png');
+    background-image: url('../f07img/filter_icon.png');
     background-repeat: no-repeat;
     background-size: 47px;
     background-position: -19px 0px;
@@ -430,7 +430,7 @@ img {
     width: 50px;
     height: 42px;
     margin-bottom: 10px;
-    background: url("../img/sidebar.png") no-repeat left top;
+    background: url("../f07img/sidebar.png") no-repeat left top;
     background-position: 0 -46px;
 }
 .f20service21:hover {
@@ -442,7 +442,7 @@ img {
     width: 50px;
     height: 42px;
     margin-bottom: 10px;
-    background: url("../img/sidebar.png") no-repeat left top;
+    background: url("../f07img/sidebar.png") no-repeat left top;
     background-position: 0 0;
 }
 .f20go-top:hover {
@@ -465,7 +465,7 @@ img {
     height: 42px;
     margin-left: 55px;
     padding-left: 55px;
-    background: url("../img/footer_service_icon.png") no-repeat left top;
+    background: url("../f07img/footer_service_icon.png") no-repeat left top;
     list-style: none;
 }
 .footer_service .s181 {
@@ -517,19 +517,19 @@ img {
     text-indent: 40px;
 }
 .col181 dt {
-    background: url("../img/footer_icon.png") no-repeat 0 0;
+    background: url("../f07img/footer_icon.png") no-repeat 0 0;
 }
 .col182 dt {
-    background: url("../img/footer_icon.png") no-repeat  0 -23px;
+    background: url("../f07img/footer_icon.png") no-repeat  0 -23px;
 }
 .col183 dt {
-    background: url("../img/footer_icon.png") no-repeat  0 -46px;
+    background: url("../f07img/footer_icon.png") no-repeat  0 -46px;
 }
 .col184 dt {
-    background: url("../img/footer_icon.png") no-repeat 0 -69px;
+    background: url("../f07img/footer_icon.png") no-repeat 0 -69px;
 }
 .col185 dt {
-    background: url("../img/footer_icon.png") no-repeat 0 -92px;
+    background: url("../f07img/footer_icon.png") no-repeat 0 -92px;
 }
 .footer18 dd {
     border-left: 1px dashed #A8A8A8;

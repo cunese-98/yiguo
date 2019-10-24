@@ -7,19 +7,19 @@
 }
 .f1top {
     height: 358px;
-    background-image: url("../img/top.jpg");
+    background-image: url("../f07img/top.jpg");
     background-repeat: no-repeat;
     background-position: center;
 }
 .f1center {
     height: 325px;
-    background-image: url("../img/center.jpg");
+    background-image: url("../f07img/center.jpg");
     background-repeat: no-repeat;
     background-position: center;
 }
 .f1bottom {
     height: 338px;
-    background-image: url("../img/bottom.jpg");
+    background-image: url("../f07img/bottom.jpg");
     background-repeat: no-repeat;
     background-position: center;
 }
