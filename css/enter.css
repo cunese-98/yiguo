@@ -1,0 +1,217 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+.head-3 {
+    border: none;
+    background: #e0e0e0;
+}
+.head-3 .wrap-3 {
+    padding: 15px 0 5px 0;
+}
+.logo-3 {
+    position: relative;
+}
+.logo-3 a {
+    width: 195px;
+    height: 50px;
+    background: url(https://login.yiguo.com/Content/img/themes/logo.png) no-repeat;
+    display: block;
+}
+.logo-3 .reg-3 {
+    position: absolute;
+    font-size: 28px;
+    font-family: "Microsoft YaHe";
+    color: #008842;
+    left: 240px;
+    top:6px;
+}
+.wrap-3 {
+    width: 1200px;
+    margin: 0 auto;
+}
+.login-3 {
+    background: #fff;
+    padding-top: 30px;
+    padding-right: 105px;
+}
+.f1-3 {
+    float: left;
+}
+.fr-3 {
+    float: right;
+    padding-right: 105px;
+}
+.login-3 p {
+    font-size: 12px;
+    margin-bottom: 20px;
+    color: #878787;
+    position: relative;
+    overflow: hidden;
+}
+.r-3 {
+    text-align: right;
+}
+.main-3 {
+    width: 308px;
+    border: 1px solid #e3e6e0;
+    padding: 30px 20px 20px;
+    background: #fff;
+}
+.main-3 p {
+    width: 100%;
+}
+.main-3 p strong {
+    font-size: 18px;
+    color: #262626;
+    /* font-family: Arial,Verdana,"\5b8b\4f53"; */
+}
+.login-3 p span {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.chunk-3-1 {
+    padding: 8px;
+    margin-left: -4px;
+    padding-bottom: 13px;
+    font-size: larger;
+    border: 1px solid #c1c1c1;
+    color: #008842;
+    background: #fff;
+}
+.main-3 .gre-3 {
+    text-decoration: underline;
+    color: #008842;
+}
+.login-3 .ipt-3 {
+    width: 254px;
+    height: 38px;
+    font-size: 14px;
+    line-height:38px;
+    padding-left: 50px;
+    border: 1px solid #c1c1c1;
+    background: #fff;
+    vertical-align: middle;
+}
+.trade-3 {
+    margin-top: 13px;
+    color: #878787;
+}
+.trade-3:hover {
+    color: #008842;
+}
+.trade-3-1 {
+    color: #878787;
+}
+/* #msg-wrap-3 {
+    height: auto !important;
+    margin: 2px 0px 5px;
+    min-height: 31px;
+} */
+/* #l2 {
+    position: relative;
+    background: #FFEBEB none repeat scroll 0% 0%;
+    border: 1px solid #E4393C;
+    padding: 3px 10px 3px 40px;
+    line-height: 18px;
+    min-height: 18px;
+    color: #E4393C;
+} */
+.btn-gre-3 {
+    display: inline-block;
+    width: 306px;
+    height: 50px;
+    font-size: 18px;
+    line-height: 50px;
+    text-align: center;
+    color: #fff;
+    background: #008842;
+}
+a {
+    text-decoration: none;
+}
+.main-3 p .ver-3 {
+    width: 140px;
+    height: 38px;
+}
+.main-3 .ipt-3 {
+    background-image: url(https://login.yiguo.com/Content/img/bg_input.png);
+    background-repeat: no-repeat;
+}
+.main-3 .use-3 {
+    background-position: 0 -119px;
+}
+.main-3 .pw-3,.main-3 .ver-3 {
+    background-position: 0 -179px;
+}
+.trade-3-1:hover {
+    color: #008842;
+}
+#in-3 i {
+    display: inline-block;
+    width: 79px;
+    height: 20px;
+    margin-right: 20px;
+}
+.login-3 i{
+    background-image: url(https://login.yiguo.com/Content/img/themes/bg_login.png);
+    background-repeat: no-repeat;
+}
+.qq-3 i {
+    background-position: -63px -200px;
+}
+.sina-3 i {
+    background-position: -162px -200px;
+}
+.ay-3 i {
+    background-position: -255px -200px;
+}
+/* 隐藏弹出二维码 */
+.add-3 {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 200000;
+}
+.code-3 {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 410px;
+    height: 250px;
+    margin: -170px 0 0 -250px;
+    padding: 45px;
+    border: 1px solid #c7c7c7;
+    z-index: 50;
+    background: #fff;
+}
+.code-3 p {
+    font-size: 14px;
+    line-height: 24px;
+    padding: 0 40px;
+    color: #565656;
+}
+.pcode-3 {
+    margin: 35px 0 0;
+    text-align: center;
+}
+.end-3 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    background: #000;
+    opacity: .2;
+}
+.code-3 .close-3 {
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    font-size: 25px;
+    color: #333;
+    text-decoration: none;
+}

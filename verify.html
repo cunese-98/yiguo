@@ -4,126 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/verify.css">
     <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.js"></script>
     <title>验证身份</title>
 </head>
-<style>
-body {
-    padding: 0;
-    margin: 0;
-    background: #f7f8f8;
-}
-.head-3 {
-    border: none;
-    background: #e0e0e0;
-}
-.head-3 .wrap-3 {
-    padding: 15px 0 5px 0;
-}
-.logo-3 {
-    position: relative;
-}
-.logo-3 a {
-    width: 195px;
-    height: 50px;
-    background: url(https://login.yiguo.com/Content/img/themes/logo.png) no-repeat;
-    display: block;
-}
-.logo-3 .reg-3 {
-    position: absolute;
-    font-size: 28px;
-    font-family: "Microsoft YaHe";
-    color: #008842;
-    left: 240px;
-    top:6px;
-}
-.wrap-3 {
-    width: 1200px;
-    margin: 0 auto;
-}
-.forget-3 {
-    margin: 0;
-    padding-top: 60px;
-    height: 560px;
-    background-color: #fff;
-}
-.forget-3 p {
-    width: 66%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 29px;
-    font-size: 14px;
-    font-family:"Microsoft YaHei";
-}
-.forget-3 .email-3 {
-    display: inline-block;
-    width: 220px;
-    padding-right: 20px;
-    text-align: right;
-    font-size: 14px;
-    font-family:"Microsoft YaHei";
-}
-.forget-3 .ipt-3 {
-    width: 190px;
-    height: 38px;
-    padding-left: 14px;
-    font-size: 14px;
-    line-height: 38px;
-    font-family: "Microsoft YaHei";
-    border: 1px solid #c1c1c1;
-    background-color: #fff;
-    vertical-align: middle;
-}
-.step-3 {
-    width: 1200px;
-    height: 48px;
-    text-indent: -9999em;
-    margin: 60px 0;
-    margin-top: 0;
-    font-size: 12px;
-    background-image: url(https://login.yiguo.com/Content/img/themes/bg_login.png);
-    background-repeat: no-repeat;
-}
-.step-3-1 {
-    background-position: 0 -48px;
-}
-.center-3 {
-    text-align: center;
-}
-.center-3 .foor-3{
-    display: inline-block;
-    text-decoration: none;
-    width: 306px;
-    height: 50px;
-    font-size: 18px;
-    line-height: 50px;
-    text-align: center;
-    color: #fff;
-    background: #008842;
-}
-.btn-jym-3 {
-    display: inline-block;
-    width: 121px;
-    height: 38px;
-    line-height: 38px;
-    margin-left: 10px;
-    text-align: center;
-    border: 1px solid #c1c1c1;
-    color: #666;
-    background-color: #f7f7f7;
-    vertical-align: middle;
-    text-decoration: none;
-}
-.btn-jym-3:hover {
-    color: #008842;
-}
-</style>
 <body>
     <div>
         <div class="head-3">
             <div class="wrap-3">
                 <div class="logo-3">
-                    <a href=""></a>
+                    <a href="index.html"></a>
                     <span class="reg-3">账号安全验证</span>
                 </div>
             </div>
@@ -153,28 +43,7 @@ body {
             </div>
         </div>
     </div>
-    <script>
-        $(document).ready(function() {
-            var validCode=true;
-            $(".btn-jym-3").click (function () {
-            var time=60;
-            var code=$(this);
-            if (validCode) {
-                validCode=false;
-                code.addClass("btn-jym-3-1");
-            var t=setInterval(function() {
-                time--;
-                code.html(time+"秒");
-                if (time==0) {
-                    clearInterval(t);
-                code.html("重新获取");
-                    validCode=true;
-                code.removeClass("btn-jym-3-1");
-                }
-            },1000)
-            }
-        })
-        })
-    </script>
+    <script language="javascript" type="text/javascript" src="js/heads.js"></script>
+    <script src="js/enter.js"></script>
 </body>
 </html>
