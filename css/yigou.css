@@ -783,3 +783,64 @@ ul {
     text-align: center;
     background: url("../images/none-bg.jpg") no-repeat center #fff;
  }
+/* 悬浮购物车 */
+.hide-Shopping-Cart {
+    position: absolute;
+    top: 5px;
+    right: 0px;
+    width: 142px;
+    height: 32px;
+    background-color: #ffffff;
+    border: 1px solid #008842;
+    
+}
+.hide-Shopping-Cart span {
+    display: inline-block;
+    vertical-align: middle;
+    width: 28px;
+    height: 20px;
+    margin-right: 10px;
+    font-size: 12px;
+    padding: 0;
+    background: url("../images/header-img.png") no-repeat -112px 0;
+    position: absolute;
+    left: 40px;
+    top: 7px;
+}
+.ringht-b24 {
+    color: #008842;
+    border: none;
+    position: absolute;
+    left: 49px;
+    top: 6px;
+    font-size: 12px;
+}
+.ringht-b124 {
+    color: #008842;
+    border: none;
+    font-size: 20px;
+    position: absolute;
+    top: 4px;
+    right: 35px;
+    font-weight: normal;
+}
+.HT-shopping24 {
+    z-index: 88;
+    display: none;
+    position: absolute;
+    top: 33px;
+    right: -1px;
+    padding: 10px;
+    background: #fff;
+    border: 1px solid #007f4d;
+}
+.hide-Shopping-Cart:hover .HT-shopping24 {
+    display: block;
+}
+.HT-shopping-txt24 {
+    width: 380px;
+    height: 120px;
+    line-height: 120px;
+    text-align: center;
+    background: url("../images/none-bg.jpg") no-repeat center #fff;
+ }
